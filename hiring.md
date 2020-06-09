@@ -4,6 +4,10 @@
 
 We track candidates in [Trello](https://trello.com/b/4VEsP1AM/engineering-hiring).
 
+## Who are are looking for
+
+We should strive to 
+
 ## Technical Interview
 
 ### Rails
