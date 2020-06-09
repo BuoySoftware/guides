@@ -5,5 +5,6 @@ documentation point for all of LSVR Software's systems.
 
 ## Table of Contents
 
+* [Hiring](hiring.md)
 * [Repos](repos.md)
 * [Working with Twilio Flex](twilio/README.md)
