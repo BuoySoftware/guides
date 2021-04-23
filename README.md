@@ -16,8 +16,8 @@ documentation point for all of Buoy Software's software systems.
 ## Resources
 
 * [Backlog](https://trello.com/b/QTdsdkpQ/engineering)
+* [DataDog](https://www.datadoghq.com/)
 * [Sentry](https://sentry.io/organizations)
-* [Skylight](https://www.skylight.io/) for performance monitoring.
 
 ## Other
 * [Recommended Reading](reading.md)
