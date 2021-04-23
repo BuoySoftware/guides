@@ -3,6 +3,10 @@
 Welcome to the Buoy Software guides repo. This is a place serve as a central
 documentation point for all of Buoy Software's software systems.
 
+## Guides by category
+
+* [General](general/README.md)
+
 ## Engineering
 
 * [Repos](repos.md)
