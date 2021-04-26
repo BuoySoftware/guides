@@ -19,11 +19,7 @@ documentation point for all of Buoy Software's software systems.
 
 * [Authorization](authorization/README.md)
 * [Data Changes](data-changes/README.md)
-
-## Resources
-
-* [DataDog](https://www.datadoghq.com/)
-* [Sentry](https://sentry.io/organizations)
+* [Web Monitoring](web-monitoring/README.md)
 
 ## Tools
 
