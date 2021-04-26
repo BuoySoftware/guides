@@ -9,6 +9,8 @@ documentation point for all of Buoy Software's software systems.
 
 ## Engineering
 
+* [Authorization](authorization/README.md)
+* [Data Changes](data-changes/README.md)
 * [GraphQL](graphql/README.md)
 * [Rails](rails/README.md)
 * [Repos](repos.md)
