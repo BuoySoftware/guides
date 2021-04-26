@@ -10,6 +10,7 @@ documentation point for all of Buoy Software's software systems.
 ## Engineering
 
 * [GraphQL](graphql/README.md)
+* [Rails](rails/README.md)
 * [Repos](repos.md)
 * [Working with Twilio Flex](twilio/README.md)
 
