@@ -13,10 +13,7 @@ documentation point for all of Buoy Software's software systems.
 
 ## Engineering
 
-* [GraphQL](graphql/README.md)
 * [Rails](rails/README.md)
-* [Repos](repos.md)
-* [Working with Twilio Flex](twilio/README.md)
 
 ## Protocols
 
@@ -25,9 +22,13 @@ documentation point for all of Buoy Software's software systems.
 
 ## Resources
 
-* [Backlog](https://trello.com/b/QTdsdkpQ/engineering)
 * [DataDog](https://www.datadoghq.com/)
 * [Sentry](https://sentry.io/organizations)
 
+## Tools
+
+* [GraphQL](graphql/README.md)
+
 ## Other
+
 * [Recommended Reading](reading.md)
