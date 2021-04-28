@@ -24,6 +24,7 @@ programming in style.
 ## Collaboration
 
 * [Code Review](code-review/README.md)
+* [Terminology](terminology/README.md)
 
 ## Engineering
 
