@@ -4,6 +4,7 @@
 
 - Use the `verb:noun` naming convention. IE: `manage:donor` `read:donor`
 - Keep permissions in the [DevOps] repository up to date.
+- Ensure the [Permissions Matrix] is up to date.
 - Ensure permissions are updated in all Auth0 tenants.
   - Current tenants include: Development, Staging, Validation and Production
   - Non-breaking changes can be rolled out to all environments at the same time
@@ -21,3 +22,4 @@
 [Allow Phys. Subs to end deferrals]: https://trello.com/c/CPBNyM1i
 [DevOps]: https://github.com/BuoySoftware/DevOps
 [Four Eyes Principle]: https://www.openriskmanual.org/wiki/Four_Eyes_Principle
+[Permissions Matrix]: https://www.notion.so/0b902ab8e86e4f158772d2939837365e?v=f84d5f6e8cd04ff3a3c2b1b41c53404c
