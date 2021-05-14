@@ -34,5 +34,9 @@
 	*  Skim room notification's as they come in and leverage slack reminders if attention isn't needed immediately
 	*  Surface to someone with more context if I'm unable to address it in the moment
 *  While running test suites
+	*  Add acceptance criteria to current Trello ticket
+	*  Add engineering notes to current Trello ticket
 	*  Follow up on async communications
 	*  Skim and choose next open todo
+*  On task burn out
+	*  Reference [engineering reading materials](https://buoy-software.slack.com/archives/C011XPJL2FP), mailing lists, and bookmarks
