@@ -26,7 +26,7 @@ As engineers, we have myriad responsibilities. As professionals we are expected 
 ## Keeping up with responsibilities
 We do not mandate that an engineer handles these responsibilities in any specific way. We simply respect each other, work as a team, and expect each other to stay on top of this growing list with whatever workflow works best for the individual. This is where rituals come into play.
 
-Call them what you want, rituals, customs, habits... Whatever the name, the purpose is the same. Having a framework to stay on top of every task required of you prevents things from slipping through the cracks.
+Call them what you want, rituals, customs, habits... whatever the name, the purpose is the same. Having a framework to stay on top of every task required of you prevents things from slipping through the cracks.
 
 ## Define your rituals
 Define your own rituals. Stay on top of them. Iterate on them. Your rituals today might not be the same next month. They, almost certainly, won't be the same next year. But, start somewhere.
