@@ -27,6 +27,12 @@
 	* Review open PRs in the morning
 	* Review open PRs when adding my own to the engineering room (take a penny leave a penny)
 	* Pause what I'm working on if possible when a missed or urgent PR is bumped
-* Channels (Support, bugs, etc.):
+* Pairing requests
+	* Offer immediate assistance if in between focused work
+	* Offer a timeframe if not
+* Channels (Support, bugs, etc.)
 	*  Skim room notification's as they come in and leverage slack reminders if attention isn't needed immediately
 	*  Surface to someone with more context if I'm unable to address it in the moment
+*  While running test suites
+	*  Follow up on async communications
+	*  Skim and choose next open todo
