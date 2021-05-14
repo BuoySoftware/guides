@@ -14,9 +14,9 @@
 * Back to main focus for the day
 * If there is time left, decide on next ticket or todo, issue etc.
 ### Weekly
-* Tackle (or plan when to tackle) open retro items
-* Review open sentry issues
-* Review Data Dog 
+* Tackle open retro items or set todos
+* Review open sentry issues and create any todos
+* Review Data Dog and create any corresponding todos
 
 ### Monthly
 * Re-read / Review guides and documentation
@@ -27,6 +27,6 @@
 	* Review open PRs in the morning
 	* Review open PRs when adding my own to the engineering room (take a penny leave a penny)
 	* Pause what I'm working on if possible when a missed or urgent PR is bumped
-* Channels (Support, bugs, etc.)
+* Channels (Support, bugs, etc.):
 	*  Skim room notification's as they come in and leverage slack reminders if attention isn't needed immediately
 	*  Surface to someone with more context if I'm unable to address it in the moment
