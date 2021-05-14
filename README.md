@@ -29,6 +29,7 @@ programming in style.
 ## Engineering
 
 * [Rails](rails/README.md)
+* [Rituals](rituals/README.md)
 
 ## Protocols
 
