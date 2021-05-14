@@ -8,9 +8,9 @@
 * Handle any unreviewed PRs
 * Take a look at Trello to plan what item I will be working on next in preparation for standup
 * Standup
-* Begin working on ticketed work or todo's depending on priority (if I need help with priority, I get it at standup or via slack)
+* Begin working on ticketed work or todos depending on priority (if I need help with priority, I get it at standup or via slack)
 * Break for lunch
-* When returning from lunch, check for and tackle any open support, bug, or  change requests.
+* When returning from lunch, check for and tackle any open support, bug, or change requests.
 * Back to main focus for the day
 * If there is time left, decide on next ticket or todo, issue etc.
 ### Weekly
