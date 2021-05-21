@@ -10,6 +10,10 @@ A guide for building great GraphQL servers and clients.
 * Use the [GraphQL Dataloader] pattern to eager load associations and avoid n + 1
   queries. For example, [GraphQL Batch].
 
+### Apollo
+
+* Always include a type's ID field if it has one for caching.
+
 ## Learning
 
 [Production Ready GraphQL](https://book.productionreadygraphql.com)
