@@ -9,11 +9,11 @@
 * Handle any unreviewed PRs
 * Take a look at Trello to plan what item I will be working on next in preparation for standup
 * Standup
-* Begin working on ticketed work or todos depending on priority (if I need help with priority, I get it at standup or via slack)
+* Begin working on storied work or todos depending on priority (if I need help with priority, I get it at standup or via slack)
 * Break for lunch
 * When returning from lunch, check for and tackle any open support, bug, or change requests.
 * Back to main focus for the day
-* If there is time left, decide on next ticket or todo, issue etc.
+* If there is time left, decide on next story or todo, issue etc.
 
 ### Weekly
 * Tackle open retro items or set todos
@@ -36,8 +36,8 @@
 	*  Skim room notification's as they come in and leverage slack reminders if attention isn't needed immediately
 	*  Surface to someone with more context if I'm unable to address it in the moment
 *  While running test suites
-	*  Add acceptance criteria to current Trello ticket
-	*  Add engineering notes to current Trello ticket
+	*  Add acceptance criteria to current Trello story
+	*  Add engineering notes to current Trello story
 	*  Follow up on async communications
 	*  Skim and choose next open todo
 *  On task burn out
