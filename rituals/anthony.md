@@ -1,6 +1,7 @@
 # Anthony
 
 ## Time Based
+
 ### Daily
 * Check emails, slack, and slack reminders, create any required todo's (I use the "Things" app with a shortcut to quickly add todos)
 * Run through "Things" inbox and schedule time for items to be done (could be a specific time, or just a date)
@@ -13,6 +14,7 @@
 * When returning from lunch, check for and tackle any open support, bug, or change requests.
 * Back to main focus for the day
 * If there is time left, decide on next ticket or todo, issue etc.
+
 ### Weekly
 * Tackle open retro items or set todos
 * Review open sentry issues and create any todos
