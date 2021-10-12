@@ -13,6 +13,8 @@ A guide for building great GraphQL servers and clients.
 ### Apollo
 
 * Always include a type's ID field if it has one for caching.
+* Colocate queries and mutations in the components they are used
+* [Colocate fragments] to split up query logic between components. 
 
 ## Learning
 
@@ -20,3 +22,4 @@ A guide for building great GraphQL servers and clients.
 
 [GraphQL Dataloader]: https://xuorig.medium.com/the-graphql-dataloader-pattern-visualized-3064a00f319f
 [GraphQL Batch]: https://github.com/Shopify/graphql-batch
+[Colocate fragments]: https://www.apollographql.com/docs/react/data/fragments/#colocating-fragments
