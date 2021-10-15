@@ -31,6 +31,7 @@ programming in style.
 * [Rails](rails/README.md)
 * [React](react/README.md)
 * [Responsibilities & Rituals](rituals/README.md)
+* [Tools](tools/README.md)
 
 ## Protocols
 
