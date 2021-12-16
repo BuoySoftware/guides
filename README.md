@@ -45,6 +45,7 @@ programming in style.
 
 ## Tools
 
+* [Git](git/README.md)
 * [GraphQL](graphql/README.md)
 * [PostgreSQL](postgresql/README.md)
 
