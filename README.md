@@ -37,6 +37,7 @@ programming in style.
 
 * [Authorization](authorization/README.md)
 * [Data Changes](data-changes/README.md)
+* [Object-Oriented Design](object-oriented-design/README.md)
 * [Web Monitoring](web-monitoring/README.md)
 
 ## Testing
