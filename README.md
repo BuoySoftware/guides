@@ -3,6 +3,11 @@
 Guides for working together, getting things done, programming well, and
 programming in style.
 
+Our guides are heavily influenced by [thoughtbot guides]. If our guides
+do not cover your particular topic, review their guides for guidance.
+
+[thoughtbot guides]: https://github.com/thoughtbot/guides
+
 ## High level guidelines
 
 - Be consistent.
