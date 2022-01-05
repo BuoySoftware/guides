@@ -43,6 +43,7 @@ do not cover your particular topic, review their guides for guidance.
 
 * [Authorization](authorization/README.md)
 * [Data Changes](data-changes/README.md)
+* [Merge Sequencing](merge-sequencing/README.md)
 * [Object-Oriented Design](object-oriented-design/README.md)
 * [Web Monitoring](web-monitoring/README.md)
 
