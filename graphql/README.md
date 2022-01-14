@@ -14,7 +14,10 @@ A guide for building great GraphQL servers and clients.
 
 * Always include a type's ID field if it has one for caching.
 * Colocate queries and mutations in the components they are used
-* [Colocate fragments] to split up query logic between components. 
+* [Colocate fragments] to split up query logic between components.
+
+## Pagination
+[Pagination](./pagination.md)
 
 ## Learning
 
