@@ -3,7 +3,8 @@
 ## Permission Changes
 
 - Use the `verb:noun` naming convention. IE: `manage:donor` `read:donor`
-- Keep permissions in the [DevOps] repository up to date.
+- Don't update roles or permissions directly within Auth0.
+- Use Terraform in the [DevOps] repository to update permissions.
 - Ensure the [Permissions Matrix] is up to date.
 - Ensure permissions are updated in all Auth0 tenants.
   - Current tenants include: Development, Staging, Validation and Production
