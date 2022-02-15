@@ -32,12 +32,14 @@ do not cover your particular topic, review their guides for guidance.
 * [Terminology](terminology/README.md)
 * [Working Together](working-together/README.md)
 
-## Engineering
+## Languages
+
+* [Ruby](ruby/README.md)
+
+## Frameworks and platforms
 
 * [Rails](rails/README.md)
 * [React](react/README.md)
-* [Responsibilities & Rituals](rituals/README.md)
-* [Tools](tools/README.md)
 
 ## Protocols
 
@@ -59,3 +61,5 @@ do not cover your particular topic, review their guides for guidance.
 ## Other
 
 * [Recommended Reading](reading.md)
+* [Responsibilities & Rituals](rituals/README.md)
+* [Tools](tools/README.md)
