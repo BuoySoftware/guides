@@ -40,6 +40,7 @@ do not cover your particular topic, review their guides for guidance.
 
 * [Rails](rails/README.md)
 * [React](react/README.md)
+* [Testing with RSpec](testing-rspec/README.md)
 
 ## Protocols
 
