@@ -10,6 +10,8 @@
   - Current tenants include: Development, Staging, Validation and Production
   - Non-breaking changes can be rolled out to all environments at the same time
   - Breaking changes need to be rolled out as the affected code moves to new environments
+- Ensure that a CHANGELOG entry has been added in Notion for the permissions
+  update.
 - Ensure permission changes are documented in Trello. The transparency helps
   other departments know when and how permissions are changing.
   - Be sure to include what areas of the product are affected by this change.
