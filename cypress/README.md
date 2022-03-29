@@ -1,5 +1,6 @@
 # Cypress
 
+- Try to follow the [best practices] outlined by Cypress.
 - Use the [Page Object Pattern] when designing tests.
 - Prefer [fixtures] over hard coded values.
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
@@ -14,3 +15,4 @@
 [.should() or .and()]: https://docs.cypress.io/api/commands/should#Differences
 [i18n]: https://www.i18next.com/
 [smartbear]: https://smartbear.com/learn/automated-testing/best-practices-for-automation/
+[best practices]: https://docs.cypress.io/guides/references/best-practices
