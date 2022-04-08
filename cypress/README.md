@@ -2,6 +2,7 @@
 
 - Try to follow the [best practices] outlined by Cypress.
 - Use the [Page Object Pattern] when designing tests.
+- Use PascalCase when creating new files ex. => `Login.spec.ts`, `PaymentsModal.ts`
 - Prefer [fixtures] over hard coded values.
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
 - Assertions:
