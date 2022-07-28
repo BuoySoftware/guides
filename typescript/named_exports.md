@@ -1,11 +1,12 @@
 # Named Exports
 
-By leveraging named exports we reap two main benefits:
+Prefer Named exports over default exports.
+
+By leveraging named exports and exporting all, we reap two main benefits:
 
 1. We reduce the risk of identifying the same code by two different variable
-   names.
-1. We remove bloat from index files, making it easier to identify and organize
-   named exports.
+   names (this also results in better auto complet via TypeScript tooling).
+1. We remove the bloat and duplication of exports from the index files.
 
 ## Bad
 
@@ -64,8 +65,6 @@ dir/
 export const foo = () => {
   ... do some code
 }
-
-export default foo;
 ```
 
 ### dir/foo/bar.ts
@@ -74,15 +73,11 @@ export default foo;
 export const bar = () => {
   ... do some code
 }
-
-export default bar;
 ```
 
 ### dir/foo/index.ts
 
 ```
-export { default } from "./foo"
-
-export { foo } from "./foo"
-export { bar } from "./bar"
+export * from "./foo"
+export * from "./bar"
 ```
