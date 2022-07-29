@@ -24,43 +24,44 @@ do not cover your particular topic, review their guides for guidance.
 
 ## Guides by category
 
-* [General](general/README.md)
+- [General](general/README.md)
 
 ## Collaboration
 
-* [Code Review](code-review/README.md)
-* [Terminology](terminology/README.md)
-* [Working Together](working-together/README.md)
+- [Code Review](code-review/README.md)
+- [Terminology](terminology/README.md)
+- [Working Together](working-together/README.md)
 
 ## Languages
 
-* [Ruby](ruby/README.md)
+- [Ruby](ruby/README.md)
 
 ## Frameworks and platforms
 
-* [Rails](rails/README.md)
-* [React](react/README.md)
-* [Testing with RSpec](testing-rspec/README.md)
+- [Rails](rails/README.md)
+- [React](react/README.md)
+- [Testing with RSpec](testing-rspec/README.md)
 
 ## Protocols
 
-* [Authorization](authorization/README.md)
-* [Data Changes](data-changes/README.md)
-* [Object-Oriented Design](object-oriented-design/README.md)
-* [Web Monitoring](web-monitoring/README.md)
+- [Authorization](authorization/README.md)
+- [Data Changes](data-changes/README.md)
+- [Feature Flags](feature-flags/README.md)
+- [Object-Oriented Design](object-oriented-design/README.md)
+- [Web Monitoring](web-monitoring/README.md)
 
 ## Testing
 
-* [Cypress](cypress/README.md)
+- [Cypress](cypress/README.md)
 
 ## Tools
 
-* [Git](git/README.md)
-* [GraphQL](graphql/README.md)
-* [PostgreSQL](postgresql/README.md)
+- [Git](git/README.md)
+- [GraphQL](graphql/README.md)
+- [PostgreSQL](postgresql/README.md)
 
 ## Other
 
-* [Recommended Reading](reading.md)
-* [Responsibilities & Rituals](rituals/README.md)
-* [Tools](tools/README.md)
+- [Recommended Reading](reading.md)
+- [Responsibilities & Rituals](rituals/README.md)
+- [Tools](tools/README.md)
