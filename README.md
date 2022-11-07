@@ -53,7 +53,7 @@ do not cover your particular topic, review their guides for guidance.
 
 ## Testing
 
-- [Cypress](cypress/README.md)
+- [Automation](automation/README.md)
 
 ## Tools
 
