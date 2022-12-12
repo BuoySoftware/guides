@@ -90,12 +90,16 @@ TL;DR:
 
 Download the [preset](https://gist.github.com/aq1018/89b26864e96305a80821d6aa506394dd):
 
-```
+```sh
 curl \
   --create-dirs \
   -O https://gist.githubusercontent.com/aq1018/89b26864e96305a80821d6aa506394dd/raw/extensions.json \
   -O https://gist.githubusercontent.com/aq1018/89b26864e96305a80821d6aa506394dd/raw/settings.json \
-  --output-dir .vscode
+  --output-dir .vscode;
+
+curl \
+  -O https://gist.githubusercontent.com/aq1018/89b26864e96305a80821d6aa506394dd/raw/.editorconfig \
+  -O https://gist.githubusercontent.com/aq1018/89b26864e96305a80821d6aa506394dd/raw/cspell.json
 ```
 
 ### What's included?
