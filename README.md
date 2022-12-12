@@ -57,7 +57,7 @@ do not cover your particular topic, review their guides for guidance.
 
 ## Recommended Editor / IDE Setup
 
-- [VSCode][editor-setup/vscode.md]
+- [VSCode](editor-setup/vscode.md)
 
 ## Tools
 
