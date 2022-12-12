@@ -18,7 +18,11 @@ curl \
   --create-dirs \
   -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/extensions.json \
   -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/settings.json \
-  --output-dir .vscode
+  --output-dir .vscode;
+
+curl \
+  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/.editorconfig \
+  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/cspell.json
  ```
 
 ### Features
