@@ -1,11 +1,11 @@
 # Recommended VSCode Configurations
 
-## BuoyRails
+## Ruby And Typescript Recipes
 
-This VSCode configuration is designed to help developers maximize productivity by:
+This VSCode configuration is designed to help developers who work with Ruby and Typescript maximize productivity by:
 
 1. Provide real time feedback about spelling, styling, linting, testing errors, shorten code / test cycle.
-2. Automate as much as possible, such as auto linter fix, formating, auto space/tab style switching.
+2. Automate as much as possible, such as auto linter fix, formatting, auto space/tab style switching.
 
 This will allow the developer to focus on what is important, and leave the less important work to the machine.
 
@@ -84,7 +84,9 @@ Unless you are a git ninja, you will love Inline blame, git history viewer, Git 
 - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) - Offical Jest Plugin. Run and explore Jest tests inside VSCode.
 
 
-## DevOps
+## Terraform Recipes
+
+This VSCode configuration is designed to help DevOps and Developers working with Terraform.
 
 TL;DR:
 
