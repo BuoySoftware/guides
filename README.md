@@ -56,6 +56,10 @@ do not cover your particular topic, review their guides for guidance.
 
 - [Automation](automation/README.md)
 
+## Recommended Editor / IDE Setup
+
+- [VSCode](editor-setup/vscode.md)
+
 ## Tools
 
 - [Git](git/README.md)
