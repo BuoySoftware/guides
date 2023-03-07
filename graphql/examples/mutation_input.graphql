@@ -1,0 +1,23 @@
+"""
+Bad
+"""
+type Mutation {
+  addPodcast(
+    title: String!
+    url: String!
+    description: String!
+  ): AddPodcastPayload
+}
+
+"""
+Good
+"""
+input PodcastAttributes {
+  title: String!
+  url: String!
+  description: String!
+}
+
+type Mutation {
+  addPodcast(input: PodcastAttributes!): AddPodcastPayload
+}

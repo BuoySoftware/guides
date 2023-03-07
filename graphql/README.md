@@ -4,17 +4,19 @@ A guide for building great GraphQL servers and clients.
 
 ## Best Practices
 
-* Use `find` prefix when creating a field to lookup a single data set, ie `findDonation(id: ID!)` vs `donation(id: ID!)`
-[Issue 3448](https://github.com/BuoySoftware/BuoyRails/issues/3448)
-* Avoid accepting overloaded or multiple arguments for a field, ie `donor(id: ID, email: String)`, create multiple fields instead, ie `findDonorByID(id: ID!)` and `findDonorByEmail(email: String!)`
-* Use the [GraphQL Dataloader] pattern to eager load associations and avoid n + 1
+- Use `find` prefix when creating a field to lookup a single data set, ie `findDonation(id: ID!)` vs `donation(id: ID!)`
+  [Issue 3448](https://github.com/BuoySoftware/BuoyRails/issues/3448)
+- Avoid accepting overloaded or multiple arguments for a field, ie `donor(id: ID, email: String)`, create multiple fields instead, ie `findDonorByID(id: ID!)` and `findDonorByEmail(email: String!)`
+- Use the [GraphQL Dataloader] pattern to eager load associations and avoid n + 1
   queries. For example, [GraphQL Batch].
+- Use a single argument called input when creating mutations, following the
+  Relay spec. [Example](graphql/examples/mutation_input.graphl)
 
 ### Apollo
 
-* Always include a type's ID field if it has one for caching.
-* Colocate queries and mutations in the components they are used
-* [Colocate fragments] to split up query logic between components. 
+- Always include a type's ID field if it has one for caching.
+- Colocate queries and mutations in the components they are used
+- [Colocate fragments] to split up query logic between components.
 
 ## Learning
 
