@@ -14,7 +14,8 @@
   - Breaking changes need to be rolled out as the affected code moves to new environments
 - Ensure that a CHANGELOG entry has been added in Notion for the permissions
   update.
-- The introduction of a new role is a non-breaking change that may be surprising to JoinParachute, ping Luke Winter and Erin Galarza
+- The introduction of a new role is a non-breaking change that may be surprising to
+  JoinParachute, ping Luke Winter and Erin Galarza
 - Ensure permission changes are documented in Asana. The transparency helps
   other departments know when and how permissions are changing.
   - Be sure to include what areas of the product are affected by this change.
