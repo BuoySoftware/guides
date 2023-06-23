@@ -1,14 +1,27 @@
 # Change Requests
 
-* Always set the `PaperTrail.request.whodunnit` to your account ID before
+- Set up Slack notifications for [UrgentChangeRequest]
+- Always set the `PaperTrail.request.whodunnit` to your account ID before
   performing a change request.
-* Set up Slack notifications for [UrgentChangeRequest]
-* Some change requests require an update to a versioned field. You cannot update
-  a versioned field successfully without setting the employee ID in the
-  PaperTrail request controller info. Find the ID of the employee who set the
-  original data by looking at `record.versions`. Then use that employee ID with
-  the following command:
 
-  `PaperTrail.request.controller_info = { employee_id: <ID of employee> }`
+  ```ruby
+    PaperTrail.request.whodunnit = Account.find_by!(
+      email: "FIRSTNAME@buoysoftware.com"
+    ).id
+  ```
+
+- Some change requests require an update to a versioned field. You cannot update
+  a versioned field successfully without setting the some additional info in the
+  PaperTrail request controller info.
+
+  ```ruby
+    employee = Employee.find_by!(last_name: "Doe")
+    facility = Facility.find_by!(name: "Paris")
+    PaperTrail.request.controller_info = {
+      employee_id: employee.id,
+      facility_id: facility.id,
+      location_id: facility.center_location.id
+    }
+  ```
 
 [UrgentChangeRequest]: slack-notifications.png
