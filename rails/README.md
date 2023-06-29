@@ -3,6 +3,7 @@
 A guide for building great Rails apps.
 
 - Use def `self.method`, not the `scope :method`
+- Use methods instead of instance variables in ViewComponent templates
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
 - Name time columns (referring to a time of day with no date) with `_time` suffixes.
