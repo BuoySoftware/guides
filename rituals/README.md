@@ -1,6 +1,6 @@
 # Being An Engineer
 As engineers, we have myriad responsibilities. As professionals we are expected to be reliable in staying on top of those responsibilities. Below is a comprehensive list of everything we need to juggle:
-* Trello
+* Asana
 	* Completing stories
 	* Adding engineering notes to stories
 	* Adding or clarifying acceptance criteria on stories
