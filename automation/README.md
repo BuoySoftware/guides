@@ -11,9 +11,6 @@
 - Any element you use should have a `data-testid` (`testID` for detox) selector attached to it,
   if not, prioritize working with a dev (or add it yourself) to remedy the issue.
 - [Test structure] should follow the pattern of `describe()`, `context()` and `it()`
-  - We'll want this pattern to be readable by anyone outside of the engineering team,
-    such as (Physicals Widget - Vitals Review - phys sub cannot select `acceptable? no`
-    when the donor has acceptable vitals)
   - Prefer to use present tense in [test titles]
 - Don't try to automate every test, these are some good guidelines to follow from [SmartBear].
 
@@ -29,12 +26,18 @@
       as a cohesive unit.
 - Assertions:
   - Prefer [.should() or .and()] with callback over .then() for assertions.
+  - Prefer `have.text` over `contains.text`
   - High level assertions (such as business logic) should be kept in a spec or
     helper file, low-level assertions such as i18n are acceptable in page objects.
+- [Try not to nest callbacks] and avoid the "pyramid of doom"
 
 # Detox
 
 [Detox Documentation]
+
+# Resources
+
+[Many examples] from the former VP of Engineering for Cypress
 
 [page object pattern]: https://www.toolsqa.com/cypress/page-object-pattern-in-cypress/
 [fixtures]: https://www.toolsqa.com/cypress/fixtures-in-cypress/
@@ -46,3 +49,5 @@
 [detox documentation]: https://wix.github.io/Detox/docs/introduction/getting-started
 [cypress documentation]: https://docs.cypress.io/guides/overview/why-cypress
 [test titles]: https://www.betterspecs.org/#should
+[try not to nest callbacks]: https://glebbahmutov.com/cypress-examples/recipes/concat-labels.html
+[many examples]: https://glebbahmutov.com/cypress-examples
