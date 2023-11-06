@@ -1,0 +1,22 @@
+## Pull Request Quality Checklist explanations
+- Checked for ref syntax
+    - Use ref syntax
+        - {{ ref('buoyrails__audit_logs')}}
+        - {{source('buoy_rails_raw','accounts')}}
+    - Don't use "physical references" 
+        - e.g. analytics.main.apheresis_machine_setups
+- Merged with main
+    - Use `git merge main` to resolve merge conflicts before PR
+- Loaded in ‘dagster dev’
+    - Use `dagster dev` to ensure dbt compiles
+- Tests passed locally
+    - Use `dbt test` locally to ensure tests are passing
+- Loaded in Docker Compose
+    - Use `docker-compose up --build` to load dagster as part of the Docker 
+      build
+- Test model run in Docker Compose
+    - Use dagster's UI to run a single model to check for runtime errors
+- Removed unused code
+    - Don't leave non-working code in a PR unless necessary
+- Succinct notes
+    - Use succinct notes for yourself or other developers
