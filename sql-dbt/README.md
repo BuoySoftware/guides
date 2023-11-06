@@ -39,6 +39,7 @@ repository.
 - Use fact_ prefix for fact tables
 - Don't prefix other tables
 - Use unique table names
+- Use schema prefixes for model names, e.g stg__ for staging and main__ for main
 - Use plural table names, e.g, **appointment_events** rather than 
   appointment_event
 - Prefer renaming Rails id field to the singular table name _id 
@@ -51,7 +52,7 @@ repository.
 ## Types
 - Use explicitly cast data types for fields that must be a specific data type
 
-### Monetary values
+## Monetary values
 - Monetary values should be cast as **decimal(38,2)** 
 
 ## General Cautions
