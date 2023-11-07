@@ -34,9 +34,10 @@ do not cover your particular topic, review their guides for guidance.
 
 ## Languages
 
+- [HTML](html/README.md)
 - [Ruby](ruby/README.md)
-- [Typescript](typescript/README.md)
 - [SQL-dbt](sql-dbt/README.md)
+- [Typescript](typescript/README.md)
 
 ## Frameworks and platforms
 
