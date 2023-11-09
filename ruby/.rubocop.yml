@@ -607,7 +607,9 @@ Lint/RaiseException:
 
 Layout/ArgumentAlignment:
   Enabled: true
-  EnforcedStyle: "with_first_argument"
+  EnforcedStyle: "with_fixed_indentation"
+  Exclude:
+    - "**/*.erb"
 
 Layout/FirstArgumentIndentation:
   Enabled: true
