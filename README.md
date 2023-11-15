@@ -71,6 +71,7 @@ do not cover your particular topic, review their guides for guidance.
 
 ## Other
 
+- [AWS](aws/README.md)
 - [Recommended Reading](reading.md)
 - [Responsibilities & Rituals](rituals/README.md)
 - [Tools](tools/README.md)
