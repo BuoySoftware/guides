@@ -38,6 +38,7 @@ do not cover your particular topic, review their guides for guidance.
 - [Ruby](ruby/README.md)
 - [SQL-dbt](sql-dbt/README.md)
 - [Typescript](typescript/README.md)
+- [Terraform](terraform/README.md)
 
 ## Frameworks and platforms
 
