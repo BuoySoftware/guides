@@ -36,6 +36,7 @@ do not cover your particular topic, review their guides for guidance.
 
 - [Ruby](ruby/README.md)
 - [Typescript](typescript/README.md)
+- [Terraform](terraform/README.md)
 
 ## Frameworks and platforms
 
