@@ -8,11 +8,14 @@
 - Use PascalCase when creating new files ex. => `Login.spec.ts`, `PaymentsModal.ts`
 - Prefer [fixtures] over hard coded values.
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
-- Any element you use should have a `data-testid` (`testID` for detox) selector attached to it,
-  if not, prioritize working with a dev (or add it yourself) to remedy the issue.
-- [Test structure] should follow the pattern of `describe()`, `context()` and `it()`
+- Prefer to find elements using test id's (`data-testid` or `testID`), or by role.
+  - Use i18n to ensure the element has the correct text.
+- [Test structure] should follow the pattern of `describe()` and `it() or test()`
+  - The `it() or test()` block should be clear and concise to the intention of the test.
   - Prefer to use present tense in [test titles]
 - Don't try to automate every test, these are some good guidelines to follow from [SmartBear].
+- Prefer to use `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
+  - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
 
 # Cypress
 
@@ -35,6 +38,12 @@
 
 [Detox Documentation]
 
+# Playwright
+
+[Playwright Documentation]
+
+- Try to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
+
 # Resources
 
 [Many examples] from the former VP of Engineering for Cypress
@@ -48,6 +57,8 @@
 [test structure]: https://docs.cypress.io/guides/core-concepts/writing-and-organizing-tests#Test-Structure
 [detox documentation]: https://wix.github.io/Detox/docs/introduction/getting-started
 [cypress documentation]: https://docs.cypress.io/guides/overview/why-cypress
+[playwright documentation]: https://playwright.dev/docs/intro
 [test titles]: https://www.betterspecs.org/#should
 [try not to nest callbacks]: https://glebbahmutov.com/cypress-examples/recipes/concat-labels.html
 [many examples]: https://glebbahmutov.com/cypress-examples
+[serial]: https://playwright.dev/docs/test-parallel#serial-mode
