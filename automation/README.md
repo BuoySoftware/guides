@@ -43,6 +43,7 @@
 [Playwright Documentation]
 
 - Try to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
+- Use [test.skip(conditional, message)] when a test is dependent on a feature flag (or multiple flags) being enabled.
 
 # Resources
 
@@ -62,3 +63,4 @@
 [try not to nest callbacks]: https://glebbahmutov.com/cypress-examples/recipes/concat-labels.html
 [many examples]: https://glebbahmutov.com/cypress-examples
 [serial]: https://playwright.dev/docs/test-parallel#serial-mode
+[test.skip(conditional, message)]: https://playwright.dev/docs/api/class-test#test-skip-3
