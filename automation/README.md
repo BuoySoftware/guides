@@ -43,7 +43,7 @@
 [Playwright Documentation]
 
 - Try to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
-- Use [test.skip(conditional, message)] when a test is dependent on a feature flag (or multiple flags) being enabled.
+- Use [test.skip(conditional, message)] for conditional executions of a test. This can be used for tests that rely on a feature flag being enabled.
 
 # Resources
 
