@@ -1,0 +1,7 @@
+resources:
+  requests:
+    memory: "600Mi"
+    cpu: "500m"
+  limits:
+    memory: "600Mi" # Memory limit equals the above request
+    # No cpu limit. this is excluded on purpose
