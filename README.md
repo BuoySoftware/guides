@@ -11,7 +11,7 @@ do not cover your particular topic, review their guides for guidance.
 ## High level guidelines
 
 - Be consistent.
-- Don't rewrite existing code to follow this guide.
+- Don't rewrite existing code to follow this guide.\*
 - Don't violate a guideline without a good reason.
 - A reason is good when you can convince a teammate.
 
@@ -76,3 +76,19 @@ do not cover your particular topic, review their guides for guidance.
 - [Recommended Reading](reading.md)
 - [Responsibilities & Rituals](rituals/README.md)
 - [Tools](tools/README.md)
+
+## *Rewriting with tools
+
+An exception to the guideline "Don't rewrite existing code to follow this
+guide" is that when making a change that a tool such as Rubocop or TSC can
+automatically fix, allow it to. This avoids unnecessary warnings in editors with
+integration with these tools.
+
+When updating with a tool that can autofix, follow up with a commit to add the
+SHA of the autofix commit to each project's `.git-blame-ignore-revs` file.
+**Note that these must occur in separate commits** and that the SHA in the
+second commit needs to be updated if the first commit is rebased. This can be
+done in one Pull Request if you do rebasing manually or can be done as a
+follow-up Pull Request as well. See [this blog
+post](https://calebhearth.com/rubocop-git-blame) for details on why this is
+necessary.
