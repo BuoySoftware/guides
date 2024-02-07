@@ -76,6 +76,7 @@ do not cover your particular topic, review their guides for guidance.
 - [Recommended Reading](reading.md)
 - [Responsibilities & Rituals](rituals/README.md)
 - [Tools](tools/README.md)
+- [Publishing Gems with GitHub Packages](ruby/gems.md)
 
 ## *Rewriting with tools
 
