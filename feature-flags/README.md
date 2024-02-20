@@ -9,7 +9,7 @@ of 3 categories:
 2. Ops Toggles - A feature flag designed to allow us to incrementally release a
    feature to production, typically targetted at the center level.
 3. Configuration Toggles - These are flags that enable / disable features on a
-   per customer basis and are not considered "temporary".
+   per customer or per environment basis and are not considered "temporary".
 
 ## Guide
 
