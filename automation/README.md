@@ -6,16 +6,19 @@
     will instantiate all of the submodules in order to keep our imports and complexity
     in the test spec to a minimum.
 - Use PascalCase when creating new files ex. => `Login.spec.ts`, `PaymentsModal.ts`
-- Prefer [fixtures] over hard coded values.
+- Use snake_case when creating new folders ex => `test_results`
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
+- Prefer [fixtures] over hard coded values.
 - Prefer to find elements using test id's (`data-testid` or `testID`), or by role.
   - Use i18n to ensure the element has the correct text.
-- [Test structure] should follow the pattern of `describe()` and `it() or test()`
+- Prefer the use of `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
+  - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
+- Prefer data generation within the test spec, avoid the [mystery guest].
+- Prefer business logic to be tested within the test spec (ie not in a PageObject or helper). Simple text assertions (ie i18n) are allowed in PageObjects.
+- Prefer the [Test structure] of `describe()` and `it() or test()`
   - The `it() or test()` block should be clear and concise to the intention of the test.
   - Prefer to use present tense in [test titles]
 - Don't try to automate every test, these are some good guidelines to follow from [SmartBear].
-- Prefer to use `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
-  - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
 
 # Cypress
 
@@ -30,8 +33,6 @@
 - Assertions:
   - Prefer [.should() or .and()] with callback over .then() for assertions.
   - Prefer `have.text` over `contains.text`
-  - High level assertions (such as business logic) should be kept in a spec or
-    helper file, low-level assertions such as i18n are acceptable in page objects.
 - [Try not to nest callbacks] and avoid the "pyramid of doom"
 
 # Detox
@@ -42,8 +43,8 @@
 
 [Playwright Documentation]
 
-- Try to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
 - Use [test.skip(conditional, message)] for conditional executions of a test. This can be used for tests that rely on a feature flag being enabled.
+- Prefer to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
 
 # Resources
 
@@ -64,3 +65,4 @@
 [many examples]: https://glebbahmutov.com/cypress-examples
 [serial]: https://playwright.dev/docs/test-parallel#serial-mode
 [test.skip(conditional, message)]: https://playwright.dev/docs/api/class-test#test-skip-3
+[mystery guest]: https://thoughtbot.com/blog/mystery-guest
