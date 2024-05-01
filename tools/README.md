@@ -9,6 +9,7 @@ common tools found throughout our engineering organization.
 * [iTerm2](https://iterm2.com) - A more advanced terminal emulator for macOS
   than what you get out of the box.
 * [kitty](https://sw.kovidgoyal.net/kitty/) - A fast GPU based terminal emulator
+* [rectangle](https://rectangleapp.com/) - Window manager for mac.
 * [rcm](https://github.com/thoughtbot/rcm) - A tool for keeping your dotfiles in
   version control, as well as sharing them across multiple machines
 * [tmux](https://github.com/tmux/tmux) - A customizable terminal multiplexer
