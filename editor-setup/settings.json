@@ -1,0 +1,21 @@
+{
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "ruby.rubocop.useBundler": true,
+    "rubyTestExplorer.testFramework": "rspec",
+    "rubyTestExplorer.rspecCommand": "bundle exec rspec",
+    "rubyTestExplorer.filePattern": [
+        "*_spec.rb"
+    ],
+    "jest.jestCommandLine": "yarn test",
+    "cSpell.ignorePaths": [
+        "node_modules",
+        ".vscode/extensions.json",
+        ".git",
+        "nix",
+        "vendor"
+    ],
+    "cSpell.language": "en"
+}

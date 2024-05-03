@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "apollographql.vscode-apollo",
+    "castwide.solargraph",
+    "connorshea.vscode-ruby-test-adapter",
+    "misogi.ruby-rubocop",
+    "wingrunr21.vscode-ruby",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "orta.vscode-jest",
+    "ms-vsliveshare.vsliveshare"
+  ]
+}
