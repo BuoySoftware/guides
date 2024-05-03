@@ -6,9 +6,13 @@ common tools found throughout our engineering organization.
 
 * [asdf](http://asdf-vm.com) - Used for managing versions of programming
   languages (e.g. NodeJS, Ruby, etc.)
+* [homebrew](https://brew.sh/) - Package manager for macOS.
 * [iTerm2](https://iterm2.com) - A more advanced terminal emulator for macOS
   than what you get out of the box.
 * [kitty](https://sw.kovidgoyal.net/kitty/) - A fast GPU based terminal emulator
+* [notion](https://www.notion.so/desktop) - The desktop app version for
+  accessing our documentation,
+* [oh my zsh](https://ohmyz.sh/) - Super powered ZSH configuration.
 * [rectangle](https://rectangleapp.com/) - Window manager for mac.
 * [rcm](https://github.com/thoughtbot/rcm) - A tool for keeping your dotfiles in
   version control, as well as sharing them across multiple machines
