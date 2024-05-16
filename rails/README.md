@@ -21,7 +21,7 @@ A guide for building great Rails apps.
 - Avoid naming methods after database columns in the same class.
 - Don't return false from `ActiveModel` callbacks, but instead raise an exception.
 - Keep `db/schema.rb` or `db/development_structure.sql` under version control.
-- Use `_url suffixes for named routes in mailer views and redirects. Use `\_path` suffixes for named routes everywhere else.
+- Use `_url` suffixes for named routes in mailer views and redirects. Use `\_path` suffixes for named routes everywhere else.
 - Validate the associated belongs_to object (user), not the database column (user_id).
 - Use db/seeds.rb for data that is required in all environments.
 - Use dev:prime rake task for development environment seed data.

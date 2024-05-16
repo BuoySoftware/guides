@@ -11,19 +11,13 @@ This will allow the developer to focus on what is important, and leave the less 
 
 ### Setup
 
-To use is [VSCode config preset](https://gist.github.com/aq1018/e23670dab88685c628142f7691278f76), simply run the following command in your project directory:
+To use these VSCode config presets, simply put the following files in the project directory:
 
-```sh
-curl \
-  --create-dirs \
-  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/extensions.json \
-  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/settings.json \
-  --output-dir .vscode;
-
-curl \
-  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/.editorconfig \
-  -O https://gist.githubusercontent.com/aq1018/e23670dab88685c628142f7691278f76/raw/cspell.json
- ```
+- Root directory: [`.editorconfig`](./.editorconfig)
+- `.vscode` directory (create one if one does not exist)
+  - [`cspell.json`](./cspell.json)
+  - [`extensions.json`](./extensions.json)
+  - [`settings.json`](./settings.json)
 
 ### Features
 

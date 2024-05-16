@@ -50,6 +50,7 @@ do not cover your particular topic, review their guides for guidance.
 ## Protocols
 
 - [Authorization](authorization/README.md)
+- [Change Requests](change-requests/README.md)
 - [Data Changes](data-changes/README.md)
 - [Feature Flags](feature-flags/README.md)
 - [Object-Oriented Design](object-oriented-design/README.md)

@@ -1,0 +1,16 @@
+{
+  "words": [
+   ],
+  "enableFiletypes": [
+    "dockercompose",
+    "dockerfile",
+    "editorconfig",
+    "erb",
+    "gemfile",
+    "makefile",
+    "ruby",
+    "shellscript",
+    "sql",
+    "xml"
+  ]
+}
