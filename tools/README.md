@@ -12,12 +12,11 @@ common tools found throughout our engineering organization.
 * [kitty](https://sw.kovidgoyal.net/kitty/) - A fast GPU based terminal emulator
 * [notion](https://www.notion.so/desktop) - The desktop app version for
   accessing our documentation,
-* [oh my zsh](https://ohmyz.sh/) - Super powered ZSH configuration.
-* [rectangle](https://rectangleapp.com/) - Window manager for mac.
 * [rcm](https://github.com/thoughtbot/rcm) - A tool for keeping your dotfiles in
   version control, as well as sharing them across multiple machines
 * [tmux](https://github.com/tmux/tmux) - A customizable terminal multiplexer
 * [tuple](https://tuple.ap://tuple.app) - A tool for pair programming with 1 or
   more remote engineers
-* [vim](https://www.vim.org) - An in-terminal, highly customizable, text editor
+* [vim](https://www.vim.org)/[neovim](https://neovim.io/) - In-terminal, highly
+  customizable, text editors
 * [VSCode](https://code.visualstudio.com) - A standalone highly customizable IDE
