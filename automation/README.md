@@ -5,7 +5,7 @@
     Such as the ReceptionWidget, we have a ScreeningPage and RegistrationPage that
     will instantiate all of the submodules in order to keep our imports and complexity
     in the test spec to a minimum.
-- Use PascalCase when creating new files ex. => `Login.spec.ts`, `PaymentsModal.ts`
+- Use snake_case when creating new files ex. => `login.spec.ts`, `payments_modal.ts`
 - Use snake_case when creating new folders ex => `test_results`
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
 - Prefer [fixtures] over hard coded values.
