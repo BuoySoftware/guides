@@ -25,20 +25,19 @@
 - Use [stubs and spies] \(not mocks\) in isolated tests.
 - Use a single level of abstraction within scenarios.
 - Use an `it` example or test method for each execution path through the method.
+- Prefer one expectation per `it` example.
 - Use [assertions about state] for incoming messages.
 - Use stubs and spies to assert you sent outgoing messages.
 - Use a [Fake] to stub requests to external services.
 - Use integration tests to execute the entire app.
 - Use non-[SUT] methods in expectations when possible.
 
-[`expect` syntax]:
-http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
+[`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
 [dependency injection]: http://en.wikipedia.org/wiki/Dependency_injection
 [`delayed::job` matcher]: https://gist.github.com/3186463
 [stubs and spies]: http://robots.thoughtbot.com/post/159805295/spy-vs-spy
-[assertions about state]:
-https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
+[assertions about state]: https://speakerdeck.com/skmetz/magic-tricks-of-testing-railsconf?slide=51
 [fake]: http://robots.thoughtbot.com/post/219216005/fake-it
 [sut]: http://xunitpatterns.com/SUT.html
 [Four-Phase Test]: https://thoughtbot.com/blog/four-phase-test

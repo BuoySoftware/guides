@@ -18,29 +18,50 @@ describe SomeClass do
     end
   end
 
-  describe '.some_class_method' do
-    it 'does something' do
+  describe ".some_class_method" do
+    it "does something" do
       # ...
     end
   end
 
-  describe '#some_instance_method' do
-    it 'does something' do
-      expect(something).to eq 'something'
+  describe "#some_instance_method" do
+    it "does something" do
+      expect(something).to eq "something"
     end
   end
 
-  describe '#another_instance_method' do
-    context 'when in one case' do
-      it 'does something' do
+  describe "#another_instance_method" do
+    context "when in one case" do
+      it "does something" do
         # ...
       end
     end
 
-    context 'when in other case' do
-      it 'does something else' do
+    context "when in other case" do
+      it "does something else" do
         # ...
       end
+    end
+  end
+
+  # Good
+  # One expectation per `it`
+  describe "#update" do
+    it "sets the phone number" do
+      expect(phone_number).to eq "+123456789"
+    end
+
+    it "sets the postal_code" do
+      expect(postal_code).to eq "000000"
+    end
+  end
+
+  # Bad
+  # Multiple expectations per `it`
+  describe "#update" do
+    it "sets attributes" do
+      expect(phone_number).to eq "+123456789"
+      expect(postal_code).to eq "000000"
     end
   end
 end
