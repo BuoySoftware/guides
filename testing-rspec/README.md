@@ -62,8 +62,7 @@
 
 [Sample](unit_test_spec.rb)
 
-- Don't prefix `it` block descriptions with `should`. Use [Imperative mood]
-  instead.
+- Don't prefix `it` block descriptions with `should`. Use the [indicative mood] instead.
 - Use `subject` blocks to define objects for use in one-line specs.
   [Example](unit_test_spec.rb#6).
 - Put one-liner specs at the beginning of the outer `describe` blocks.
@@ -75,4 +74,4 @@
 - Order validation, association, and method tests in the same order that they
   appear in the class.
 
-[imperative mood]: http://en.wikipedia.org/wiki/Imperative_mood
+[indicative mood]: https://en.wikipedia.org/wiki/Realis_mood#The_English_indicative
