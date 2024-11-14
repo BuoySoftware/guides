@@ -38,6 +38,11 @@ Style and best practices that apply to all languages and frameworks.
 - Treat acronyms as words in names (`XmlHttpRequest` not `XMLHTTPRequest`), even
   if the acronym is the entire name (`class Html` not `class HTML`).
 
+## Performance
+
+- Total Page Load Time should take no more than 2 seconds, and never more than 3
+- Database queries during a web request should take no more than 200ms
+
 ## Organization
 
 - Order methods so that caller methods are earlier in the file than the methods
