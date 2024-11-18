@@ -8,7 +8,7 @@
 - Use snake_case when creating new files ex. => `login.spec.ts`, `payments_modal.ts`
 - Use snake_case when creating new folders ex => `test_results`
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
-- Use app level APIs and GraphQL when available, fallback to automation managed GraphQL when neither option exists.
+- Use application-level APIs and GraphQL whenever available. If neither option exists, fall back to the automation-managed GraphQL.
 - Use prefix action functions according to element type.
   - `click` for links and buttons.
   - `select` for elements with options like dropdowns, radios, and checkboxes.
