@@ -8,12 +8,13 @@
 - Use snake_case when creating new files ex. => `login.spec.ts`, `payments_modal.ts`
 - Use snake_case when creating new folders ex => `test_results`
 - Use [i18n] (where applicable) instead of hard-coding text, buttons, inputs, form fields, etc.
+- Use application-level APIs and GraphQL whenever available. If neither option exists or will be removed or deprecated, fall back to the automation-managed GraphQL.
+- Use prefix action functions according to element type.
+  - `click` for links and buttons.
+  - `select` for elements with options like dropdowns, radios, and checkboxes.
 - Prefer [fixtures] over hard coded values.
 - Prefer to find elements using test id's (`data-testid` or `testID`), or by role.
   - Use i18n to ensure the element has the correct text.
-- Prefix action functions according to element type.
-  - `click` for links and buttons.
-  - `select` for elements with options like dropdowns, radios, and checkboxes.
 - Prefer the use of `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
   - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
 - Prefer data generation within the test spec, avoid the [mystery guest].
