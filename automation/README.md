@@ -49,6 +49,7 @@
 
 - Use [test.skip(conditional, message)] for conditional executions of a test. This can be used for tests that rely on a feature flag being enabled.
 - Prefer to keep tests independent of each-other. If that is not easily attainable, run tests in [serial] mode or combine flows into one test.
+- Keep the use of tags to a minimum. If you need to add a tag for a feature test plan that is fine. When that tag is no longer needed it should be cleaned up.
 
 # Resources
 
