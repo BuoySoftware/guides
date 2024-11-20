@@ -31,6 +31,7 @@
 - Use a [Fake] to stub requests to external services.
 - Use integration tests to execute the entire app.
 - Use non-[SUT] methods in expectations when possible.
+- Use shared examples to test behavior that should be the same across different implementations or configurations (for example, the React to ERB migration). Preferably, define shared examples in the same file as the specs that use them, rather than in a separate file.
 
 [`expect` syntax]: http://myronmars.to/n/dev-blog/2012/06/rspecs-new-expectation-syntax
 [`allow` syntax]: https://github.com/rspec/rspec-mocks#method-stubs
