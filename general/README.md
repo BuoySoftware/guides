@@ -40,8 +40,8 @@ Style and best practices that apply to all languages and frameworks.
 
 ## Performance
 
-- Total Page Load Time should take no more than 2 seconds, and never more than 3
-- Database queries during a web request should take no more than 200ms
+- Total Page Load Time should take no more than 2 seconds, and never more than 3.
+- Database queries during a web request should take no more than 200ms.
 
 ## Organization
 
