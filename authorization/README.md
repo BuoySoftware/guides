@@ -7,13 +7,17 @@
   represents `create:donor` `read:donor` `update:donor` `delete:donor`.
 - Don't update roles or permissions directly within Auth0.
 - Use Terraform in the [DevOps] repository to update permissions.
-- Ensure the [Permissions Matrix] is up to date.
+- Ensure new permissions added in Terraform have detailed descriptions. Our customers need
+  to understand what the permission grants access to so they can properly manage roles.
+- Ensure new customer facing permissions are added to the `app/policies/permission_policy.rb`
+  allow list or they will not be visible to manage in roles and permission.
+- Prefer conditionally adding new permissions to allow list based on the feature flag.
 - Ensure permissions are updated in all Auth0 tenants.
   - Current tenants include: Development, Staging, Validation and Production
   - Non-breaking changes can be rolled out to all environments at the same time
   - Breaking changes need to be rolled out as the affected code moves to new environments
-- Ensure that a CHANGELOG entry has been added in Notion for the permissions
-  update.
+- Ensure that a CHANGELOG entry has been added to the [Permission Change Log] in Notion for
+  the permissions update.
 - The introduction of a new role is a non-breaking change that may be surprising to
   JoinParachute, ping Luke Winter and Erin Galarza
 - Ensure permission changes are documented in Asana. The transparency helps
@@ -26,7 +30,7 @@
 
 [DevOps]: https://github.com/BuoySoftware/DevOps
 [Four Eyes Principle]: https://www.openriskmanual.org/wiki/Four_Eyes_Principle
-[Permissions Matrix]: https://www.notion.so/0b902ab8e86e4f158772d2939837365e?v=f84d5f6e8cd04ff3a3c2b1b41c53404c
+[Permission Change Log]: https://www.notion.so/Permissions-Change-Log-4d85a45f8bba41a99b16540f150285d4
 
 ## Pundit Policies
 
