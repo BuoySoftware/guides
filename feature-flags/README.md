@@ -6,17 +6,20 @@ of 3 categories:
 
 1. Release Toggle - This is a feature flag which is used to allow in progress
    features to be merged into the main branch and go out to production "dark".
-2. Ops Toggles - A feature flag designed to allow us to incrementally release a
-   feature to production, typically targetted at the center level.
-3. Configuration Toggles - These are flags that enable / disable features on a
+   These are managed in the Feature Flag section of Administrate.
+3. Ops Toggles - A feature flag designed to allow us to incrementally release a
+   feature to production, typically targetted at the center level. These are managed
+   in the Feature Flag section of Administrate.
+4. Configuration Toggles - These are flags that enable / disable features on a
    per customer or per environment basis and are not considered "temporary".
 
 ## Guide
 
-- For release toggles, prefer database backed feature flags
+- For release toggles, prefer database backed feature flags created an managed in Adminstrate -> Feature Flags
 - For configuration toggles, prefer environment variable backed feature flags
 - Avoid creating feature flags with LaunchDarkly. This is considered deprecated
-  unless used in React during our transition away from React.
+  unless used in React during our transition away from React. You should instead leverage
+  the Feature Flag section of Administrate
 - Prefer using a feature flag when implementing a change which impacts SOPs.
 - Prefer a feature flag to a [feature branch].
 - Once a release toggle feature is turned on in production, create an Asana task in your
