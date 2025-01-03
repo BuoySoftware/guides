@@ -45,7 +45,7 @@ Style and best practices that apply to all languages and frameworks.
 
 ## Organization
 
-- Order methods so that caller methods are earlier in the file than the methods
-  they call.
-- Order methods so that methods are as close as possible to other methods they
-  call.
+- Define methods alphabetically.
+- Define class methods before instance methods.
+- Always define the `initialize` method of a class at the top of instance method
+  definitions.
