@@ -24,5 +24,6 @@ of 3 categories:
   ensure feature adoption.
 - Be proactive in removing feature flags that are no longer needed.
 - Name feature flag environment variables with the `_ENABLED` suffix.
+- Prefer using data migrations when introducing feature flags (`FeatureFlag.create!(...)`).
 
 [feature branch]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
