@@ -2,7 +2,9 @@
 
 When finding elements on a page, it's best to have a unique and stable selector. `data-testid` is the ideal selector to use, as it is resilient to DOM changes and gives the user the exact element they intend to interact with.
 
-There are times when `data-testid` may not be needed. An element can also be found by role or by label. Due to our extensive use of i18n translations within our test automation code, we can utilize these translations when finding elements by role or label.
+There are times when `data-testid` may not be needed. An element can also be found by `role` or by `label`. Due to our extensive use of i18n translations within our test automation code, we can utilize these translations when finding elements by `role` or `label`.
+
+Whether we use `data-testid`, `role` or `label`. We should try to associate the locator with the i18n translation.
 
 ## data-testid example
 
@@ -32,8 +34,8 @@ In this example, the element is identified by its associated label. The `aria-la
 ## Do
 
 - Use `data-testid` for elements that are stable and need to be uniquely identified in tests.
-- Leverage role or label attributes when `data-testid` isn't necessary, especially for accessibility purposes.
-- Consider using translations in i18n-enabled applications when identifying elements by role or label.
+- Leverage `role` or `label` attributes when `data-testid` isn't necessary, especially for accessibility purposes.
+- Consider using translations in i18n-enabled applications when identifying elements by `data-testid`, `role` or `label`.
 
 ## Don't
 
