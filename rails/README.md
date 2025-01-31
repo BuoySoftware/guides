@@ -34,10 +34,52 @@ A guide for building great Rails apps.
 
 ## Migrations
 
+Any time there is need to change the schema or data stored in the application
+database with a given group of work, write a [strong migration].
 - Don't change a migration after it has been merged into `main` if the desired
   change can be solved with another migration.
+- Schema migrations and data migrations should be kept separate.
+- We use the `strong_migration` gem, along with a 3 phase approach for any
+  change where we are renaming or moving columns around. These phases should
+  happen over 3 different releases.
+  - Phase 1:
+    - _Schema Migration_ - Create new column in the appropriate table.
+    - _Code and/or Schema Migration_ - Write the same data to both old and new
+      places.
+    - _Data Migration_ - Create a backfill so both columns have all the data.
+  - Phase 2:
+    - _Code_ - Move reads from old place to the new place.
+  - Phase 3:
+    - _Code and/or Schema Migration_ - Stop writing to old place.
+    - _Schema Migration_ - Remove old column.
+
+### Schema Migrations
+
+- These are standard rails migrations, they are stored in `db/migrate`.
+- No data should be migrated in these.
+- Since there are no data, there should be no references to models.
 - If there are default values, set them in migrations.
-- Use SQL, not `ActiveRecord` models, in migrations.
 - [Add foreign key constraints] in migrations.
+- Add appropriate indexes.
+
+### Data Migrations
+
+- Use SQL, not `ActiveRecord` models, in data migrations.
+- Depending on need data migrations are managed in two ways, `data_migrate` gem
+  or one-off rake task.
+
+#### Data Migrate Gem
+
+- These are run interwoven with the schema migrations.
+- They are stored in `db/migrate`.
+- Use this method by default. Especially use with the 3 phase approach defined
+  above.
+
+#### One-off Rake Task
+
+- These will be manually run.
+- Use when the change will take a long time & can be run outside of other
+  migrations.
 
 [add foreign key constraints]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
+[strong migration]: https://blog.appsignal.com/2024/03/20/good-database-migration-practices-for-your-ruby-on-rails-app-using-strong-migrations.html
