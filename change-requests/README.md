@@ -11,7 +11,7 @@
   ```
 
 - Some change requests require an update to a versioned field. You cannot update
-  a versioned field successfully without setting the some additional info in the
+  a versioned field successfully without setting some additional info in the
   PaperTrail request controller info.
 
   ```ruby
