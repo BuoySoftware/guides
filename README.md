@@ -51,9 +51,9 @@ do not cover your particular topic, review their guides for guidance.
 
 - [Authorization](authorization/README.md)
 - [Change Requests](change-requests/README.md)
+- [Code Design](code-design/README.md)
 - [Data Changes](data-changes/README.md)
 - [Feature Flags](feature-flags/README.md)
-- [Object-Oriented Design](object-oriented-design/README.md)
 - [Web Monitoring](web-monitoring/README.md)
 
 ## Testing
