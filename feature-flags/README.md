@@ -31,6 +31,7 @@ of 3 categories:
     - Added logging
     - Date format changes
 - Prefer using data migrations to add new feature flags, defaulted to false.
+- Prefer using data migrations when introducing feature flags (`FeatureFlag.create!(...)`).
 - Prefer a feature flag to a [feature branch].
 - Once a release toggle feature is turned on in production, create an Asana task in your
   project's respective project to remove the feature. Schedule it 1 week out to
