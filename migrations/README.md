@@ -54,8 +54,17 @@ database with a given group of work, write a migration.
 
 ## Data Migrations
 
+- Document data changes in either the Asana task that spawned the data change
+  need or in its own task (e.g. [Backfill overdraw & underdraw events])
+  - Notify appropriate teams of the change and link them to the task for
+  transparency.
+  - When in doubt, attach CSVs or screenshots from data clips generated from
+  before the migration and after it was complete to the ticket.
+- Prefer having another engineer verify the data change, [[Four Eyes Principle]]
+- Use the `DataChange` utility to track changes.
 - Use SQL, not `ActiveRecord` models, in data migrations.
 - Depending on need data migrations fall into three use cases as follows.
+
 
 ### Data Migrate Gem
 
@@ -65,23 +74,15 @@ database with a given group of work, write a migration.
 - They are stored in `db/data`.
 - Use the generator `rails g data_migration some_new_data_migration`.
 - Make them reversible in case we have to rollback.
-- Use the `DataChange` utility to track changes.
 
-### One-off Rake Task
+### Temporary Rake Task
 
 - We use these if a migration should not be tied to a deploy. Examples:
   - Long running migrations.
   - Feature releases.
-- These need to be run manually.
-- They are stored in `lib/tasks/one_off`.
-- Prepend filename with a timestamp.
-- Prefaced the task with the `one_off` task namespace.
-
-### Temporary Rake Tasks
-
-- We use these when:
-  - The data migration needs to be run multiple times.
+  - Needs to be run multiple times.
   - Validate the integrity of other data migrations.
+- These need to be run manually.
 - They are stored in `lib/tasks/tmp`.
 
 [strong migration]: https://blog.appsignal.com/2024/03/20/good-database-migration-practices-for-your-ruby-on-rails-app-using-strong-migrations.html
@@ -91,3 +92,5 @@ database with a given group of work, write a migration.
 [SQL Procedural Language]: https://www.postgresql.org/docs/current/sql-createfunction.html
 [triggers]: https://www.postgresql.org/docs/current/sql-createtrigger.html
 [Add foreign key constraints]: http://robots.thoughtbot.com/referential-integrity-with-foreign-keys
+[Backfill overdraw & underdraw events]: https://app.asana.com/0/1204148179532667/1209173110752566/f
+[Four Eyes Principle]: https://www.openriskmanual.org/wiki/Four_Eyes_Principle
