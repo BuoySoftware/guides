@@ -54,6 +54,7 @@ do not cover your particular topic, review their guides for guidance.
 - [Code Design](code-design/README.md)
 - [Data Changes](data-changes/README.md)
 - [Feature Flags](feature-flags/README.md)
+- [Migrations](migrations/README.md)
 - [Web Monitoring](web-monitoring/README.md)
 
 ## Testing
