@@ -8,19 +8,20 @@ database with a given group of work, write a migration.
 - Schema migrations and data migrations should be kept separate.
 - We use the [`strong_migrations`], [`fx`], and [`data_migrate`] gems, along
   with a 3 phase approach for any change where we are renaming or moving columns
-  around. These phases should happen over 3 different releases.
+  around. These phases should happen over 3 different release versions. _Note:
+  may end up being one client release, so care must be taken when that happens._
   - Phase 1:
     - _Code_ - Add deprecation warnings for old attribute.
+    - _Schema Migration_ - Create new column in the appropriate table.
     - _Function_ Create function to duplicate data from old to new column.
     - _Trigger_ - Create trigger to run function on old column.
-    - _Schema Migration_ - Create new column in the appropriate table.
     - _Schema Migration_ - Add phase 1 trigger and function.
     - _Data Migration_ - Create a backfill from old to new column.
   - Phase 2:
-    - _Code_ - Move reads from old to new column.
+    - _Code_ - Move reads from old to new column & ignore old column.
+    - _Schema Migration_ - Remove phase 1 function and trigger.
     - _Function_ Create function to duplicate data from new to old column.
     - _Trigger_ - Create trigger to run function on new column.
-    - _Schema Migration_ - Remove phase 1 function and trigger.
     - _Schema Migration_ - Add phase 2 trigger and function.
   - Phase 3:
     - _Code_ - Remove deprecation warnings for old attribute.
@@ -30,7 +31,8 @@ database with a given group of work, write a migration.
 
 ## Functions
 
-- These are custom function that can later be called via SQL.
+- The [`fx`] gem is used to create custom function that can later be called via
+  SQL.
 - Stored in `db/functions`.
 - Added to the database via `create_function` schema migrations.
 - Removed from the database via `drop_function` schema migrations.
@@ -38,7 +40,8 @@ database with a given group of work, write a migration.
 
 ## Triggers
 
-- These are event [triggers] that fire when the given event happens.
+- The [`fx`] gem is used to create event [triggers] that fire when the given
+  event happens.
 - Stored in `db/triggers`.
 - Added to the database via `create_trigger` schema migrations.
 - Removed from the database via `drop_trigger` schema migrations.
