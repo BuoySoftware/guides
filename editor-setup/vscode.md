@@ -73,7 +73,7 @@ Unless you are a git ninja, you will love Inline blame, git history viewer, Git 
 - [Ruby Solargraph](https://marketplace.visualstudio.com/items?itemName=castwide.solargraph) - A Ruby language server featuring code completion, intellisense, and inline documentation.
 - [Ruby Test Explorer](https://marketplace.visualstudio.com/items?itemName=connorshea.vscode-ruby-test-adapter) - Run and Export Ruby Specs directly in VSCode.
 - [Rubocop](https://marketplace.visualstudio.com/items?itemName=misogi.ruby-rubocop) - Rubocop Linter Integration. Shows linting issues. Auto fix on save.
-- [Ruby](https://marketplace.visualstudio.com/items?itemName=wingrunr21.vscode-ruby) - Offical Ruby Plugin.
+- [Ruby LSP](https://marketplace.visualstudio.com/items?itemName=Shopify.ruby-lsp) - Offical Ruby Plugin.
 - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - ESLint plugin. Shows linting issues. Configured to auto fix on save.
 - [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest) - Offical Jest Plugin. Run and explore Jest tests inside VSCode.
 
