@@ -6,7 +6,7 @@ AllCops:
     - db/schema.rb
     - bin/**/*
 
-require:
+plugins:
   - rubocop-performance
 
 Naming/AccessorMethodName:
