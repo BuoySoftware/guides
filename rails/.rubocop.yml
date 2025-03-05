@@ -6,8 +6,10 @@ AllCops:
     - db/schema.rb
     - bin/**/*
 
-require:
+plugins:
   - rubocop-rails
+
+require:
   - rubocop-packs
 
 Rails/Delegate:
