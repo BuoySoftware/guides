@@ -64,12 +64,28 @@ database with a given group of work, write a migration.
   - When in doubt, attach CSVs or screenshots from data clips generated from
   before the migration and after it was complete to the ticket.
 - Prefer having another engineer verify the data change, [[Four Eyes Principle]]
-- Use the `DataChange` utility to track changes.
 - Use SQL, not `ActiveRecord` models, in data migrations.
-- Depending on need data migrations fall into three use cases as follows.
 
+### Tracking Changes
 
-### Data Migrate Gem
+In order to know what was changed and when we should track any migrations run
+in our applications.
+
+- Use the `DataChange` utility to track changes.
+- Scale the usage of `DataChange` based on the number of records being migrated
+  across all environments and clients.
+  - With smaller data changes
+    - `pre` and `post` queries should be summaries, not all records.
+    - `change` query include helpful `returning` data.
+  - With large data changes
+    - `pre` and `post` queries should be summaries, not all records.
+    - `change` query should `disable_streaming`.
+
+### Types of Data Migrations
+
+Depending on need, data migrations fall into two use cases as follows.
+
+#### Data Migrate Gem
 
 - We use the [`data_migrate`] gem for managing data migrations.
 - This should be the default data migration method.
@@ -78,10 +94,10 @@ database with a given group of work, write a migration.
 - Use the generator `rails g data_migration some_new_data_migration`.
 - Make them reversible in case we have to rollback.
 
-### Temporary Rake Task
+#### Temporary Rake Task
 
 - We use these if a migration should not be tied to a deploy. Examples:
-  - Long running migrations.
+  - Long running migrations that don't need to be interwoven.
   - Feature releases.
   - Needs to be run multiple times.
   - Validate the integrity of other data migrations.
