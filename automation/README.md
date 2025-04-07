@@ -14,6 +14,9 @@
   - `select` for elements with options like dropdowns, radios, and checkboxes.
 - Prefer [fixtures] over hard coded values.
 - Prefer to find elements using [testid, role or label](examples/selectors.md)
+- Prefer to find elements by multiple locators versus creating new pageobjects
+  - Example: If a React page has been migrated to Rails, update the existing page
+    locators with an `or` statement => `this.page.locator("dt").or(this.page.locator("dd"))`
 - Prefer the use of `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
   - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
 - Prefer data generation within the test spec, avoid the [mystery guest].
