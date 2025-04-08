@@ -12,6 +12,7 @@
 - Use prefix action functions according to element type.
   - `click` for links and buttons.
   - `select` for elements with options like dropdowns, radios, and checkboxes.
+- Use test flows for repeated logic and assertions. Refer to example `test_flows.md`
 - Prefer [fixtures] over hard coded values.
 - Prefer to find elements using [testid, role or label](examples/selectors.md)
 - Prefer to find elements by multiple locators versus creating new pageobjects
@@ -20,7 +21,7 @@
 - Prefer the use of `Base` classes (forms, breadcrumbs, footers, etc) to reduce code duplication.
   - This may not be applicable to every component. If you see a pattern in similar components, it may be worth adding a new `Base` class!
 - Prefer data generation within the test spec, avoid the [mystery guest].
-- Prefer business logic to be tested within the test spec (ie not in a PageObject or helper). Simple text assertions (ie i18n) are allowed in PageObjects.
+- Prefer business logic to be tested within the test spec or test flows, but not in the PageObject. Simple assertions (ie i18n) are allowed in PageObjects. ex => `await expect(this.formElm).toBeVisible();`
 - Prefer the [Test structure] of `describe()` and `it() or test()`
   - The `it() or test()` block should be clear and concise to the intention of the test.
   - Prefer to use present tense in [test titles]
