@@ -40,7 +40,8 @@ that covers this material from [Derek Prior at RailsConf
   branch. Do not squash until the branch is ready to merge. Reviewers should be
   able to read individual updates based on their earlier feedback.
 - Seek to understand the reviewer's perspective.
-- Try to respond to every comment.
+- Try to respond to every comment on the PR or acknowledge so PR reviewer knows 
+  their comment has been seen. 
 - Wait to merge the branch until continuous integration (TDDium, Travis CI,
   CircleCI, etc.) tells you the test suite is green in the branch.
 - Merge once you feel confident in the code and its impact on the project.
