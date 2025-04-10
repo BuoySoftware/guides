@@ -12,7 +12,7 @@
 - Use prefix action functions according to element type.
   - `click` for links and buttons.
   - `select` for elements with options like dropdowns, radios, and checkboxes.
-- Use test flows for repeated logic and assertions. Refer to example `test_flows.md`
+- Use test flows for repeated logic and assertions. Refer to [test flows](examples/test_flows.md) for additional details.
 - Prefer [fixtures] over hard coded values.
 - Prefer to find elements using [testid, role or label](examples/selectors.md)
 - Prefer to find elements by multiple locators versus creating new pageobjects

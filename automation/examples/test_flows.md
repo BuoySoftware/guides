@@ -5,7 +5,7 @@
  2. Builder - Used for repeated actions. For example, e2e flows.
 
  ## Validator Example
-```erb
+```ts
 export class ExamplePageValidators {
   readonly page: Page;
   readonly TB: TestBuilder;
@@ -17,7 +17,7 @@ export class ExamplePageValidators {
 }
 ```
  ## Builder Example
-```erb
+```ts
 export class RegistrationBuilder {
   readonly profileStep: ProfileStep;
 
@@ -34,7 +34,7 @@ These mathods can accept parameters required to complete test scenarios. Asserti
 Test steps should be defined within the method. 
 
 ### Example:
-```erb
+```ts
   async validatePhlebotomySection(fixture: SampleDrawFixture): Promise<void> {
     const phlebotomySection = this.sampleRecordPage.phlebotomySection;
 
@@ -63,7 +63,7 @@ Test steps should be defined within the method.
 When the test flow is called inside of a spec, there is no need to add additional test steps. 
 
 ### Example:
-```erb
+```ts
   test(
     "screener completes donor registration",
     { tag: ["@TCID-XXXX"] },
