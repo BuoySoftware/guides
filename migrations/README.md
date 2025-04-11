@@ -114,7 +114,7 @@ going one release at a time instead of all the way to the final release.
 ### Tracking Changes
 
 In order to know what was changed and when we should track any migrations run
-in our applications.
+in our applications:
 
 - Use the `DataChange` functionality.
 - Scale data migrations based on the number of records being migrated.
