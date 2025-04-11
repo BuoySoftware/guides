@@ -2,7 +2,6 @@
 
 A guide for building great Rails apps.
 
-- Use def `self.method`, not the `scope :method`
 - Use methods instead of instance variables in ViewComponent templates
 - Use i18n for all text within the application.
 - Name date columns with `_on` suffixes.
