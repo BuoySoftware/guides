@@ -25,19 +25,21 @@ There are a couple of reason why we take this approach.
 - Phase 1:
   - _Code_ - Add deprecation warnings for old attribute.
   - _Schema Migration_ - Create new column in the appropriate table.
-  - _Function_ Create function to duplicate data from old to new column.
-  - _Trigger_ - Create trigger to run function on old column.
+  - _Database Function_ Create function to duplicate data from old to new
+    column.
+  - _Database Trigger_ - Create trigger to run function on old column.
   - _Schema Migration_ - Add phase 1 trigger and function.
   - _Data Migration_ - Create a backfill from old to new column.
 - Phase 2:
   - _Code_ - Move reads from old to new column & ignore old column.
   - _Schema Migration_ - Remove phase 1 function and trigger.
-  - _Function_ Create function to duplicate data from new to old column.
-  - _Trigger_ - Create trigger to run function on new column.
+  - _Database Function_ Create function to duplicate data from new to old
+    column.
+  - _Database Trigger_ - Create trigger to run function on new column.
   - _Schema Migration_ - Add phase 2 trigger and function.
 - Phase 3:
   - _Code_ - Remove deprecation warnings for old attribute.
-  - _Functions and Triggers_ - Remove all function and trigger.
+  - _Database Functions and Triggers_ - Remove all functions and triggers.
   - _Schema Migration_ - Remove phase 2 function and trigger.
   - _Schema Migration_ - Remove old column.
 
@@ -62,14 +64,14 @@ migrations, then Phase 2 schema migrations happen in that order. The
 
 The concept of interwoven data changes does not need to be limited to the 3
 phased approach, but is the main cause of our usage of it. Another benefit of
-interwoven data changes with schema changes is that if a data change fails it
-it will fail after the schema change and not allow the rest of the migrations to
-run. Allowing for easier troubleshooting and follow up of migrations that did
+interwoven data changes with schema changes is that if a data change fails, it
+will fail after the schema change and not allow the rest of the migrations to
+run. This allows for easier troubleshooting and follow up of migrations that did
 not run.
 
 #### Slow Roll Releases
 
-Another way to solve this issue is to slowly rolling out a release. This means
+Another way to solve this issue is to slowly roll out a release. This means
 going one release at a time instead of all the way to the final release.
 
 ## Functions
@@ -125,11 +127,14 @@ in our applications.
   - With large data set changes
     - The `pre` & `post` steps.
       - Should be in two different `DataChange` calls.
-      - Could be full records or a summaries depending on the amount of data
-        being written to the `csv` files.
-    - Do not use the `change` `DataChange` step.
-    - Use the `find_in_batches` functionality to make the actual changes to
-      manage memory usage of the migration.
+      - Could be full records or a summarized count depending on the amount of
+        data being written to the `csv` files.
+    - For the actual data migration step:
+      - Do not use the `change` `DataChange` step.
+      - Use the `find_in_batches` functionality to make the actual changes to
+        manage memory usage of the migration.
+      - Add a `puts` statement in the batch loop to keep session active and give
+        console/log feedback of the status.
 
 ### Types of Data Migrations
 
