@@ -6,6 +6,9 @@ AllCops:
     - db/schema.rb
     - bin/**/*
 
+inherit_from:
+  - rubocop/.style.yml
+
 plugins:
   - rubocop-performance
 

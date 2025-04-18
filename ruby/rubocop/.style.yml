@@ -1,0 +1,3 @@
+# Allows implicit `super` calls without parentheses.
+Style/AvoidImplicitSuper:
+  Enabled: false
