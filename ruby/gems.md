@@ -34,5 +34,16 @@ Ensure your `~/.gem/credentials` file has 0600 permissions, if not run `chmod 06
 Then run the following example command to publish the new gem replacing the `.gem` file with the one you built using `gem build`:
 
 ```sh
-gem push --key github --host https://rubygems.pkg.github.com/BuoySoftware rubocop-buoy-0.1.0.gem
+gem push --key github --host https://rubygems.pkg.github.com/BuoySoftware rubocop-buoy-0.4.0.gem
 ```
+
+## Tagging
+
+Once your Pull Request is fully merged into origin/main, best practice is to tag the version in GitHub. For example, if
+the new version is 0.4.0 the following steps would apply:
+
+1. Ensuring you are on up-to-date `main`
+2. `git tag -a v0.4.0 -m "Version 0.4.0"`
+3. `git push origin v0.4.0`
+
+[Rubocop-buoy Example](https://github.com/BuoySoftware/rubocop-buoy/tags)
