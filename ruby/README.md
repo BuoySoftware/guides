@@ -20,7 +20,7 @@
 - Suffix variables holding a factory with `_factory` (`user_factory`).
 - Use `%()` for single-line strings containing double-quotes that require
   interpolation.
-- Use `?` suffix for predicate methods.
+- [Use `?` suffix for predicate methods.](rules/predicate-methods.md)
 - Prefer `def self.method`, over `class << self`.
 - Use `def` with parentheses when there are arguments. 
 - Use heredocs for multi-line strings.
