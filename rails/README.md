@@ -13,8 +13,8 @@ A guide for building great Rails apps.
   attribute name.
 - Order ActiveRecord validations alphabetically by attribute name.
 - Order ActiveRecord associations above ActiveRecord validations.
-- Order controller contents: standard methods, custom methods, filters, private methods.
-  - Standard methods should be organized using the official Rails order: index, new, create, show, edit, update, destroy
+- Order controller contents: standard actions, custom actions, filter methods, private methods.
+  - Standard methods should be organized using the official Rails order (see `Rails/ActionOrder` cop)
   - All other methods should be organized in their respective sections alphabetically
 - Order i18n translations alphabetically by key name.
 - Order model contents: constants, macros, public methods, private methods.
