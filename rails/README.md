@@ -26,7 +26,4 @@ A guide for building great Rails apps.
 - Use db/seeds.rb for data that is required in all environments.
 - Use dev:prime rake task for development environment seed data.
 - Prefer `cookies.signed` over `cookies` to prevent tampering.
-- Prefer `Time.current` over `Time.now`
-- Prefer `Date.current` over `Date.today`
-- Prefer `Time.zone.parse("2014-07-04 16:05:37")` over `Time.parse("2014-07-04 16:05:37")`
 - Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset environment variables are detected on deploy.
