@@ -45,7 +45,7 @@ Style and best practices that apply to all languages and frameworks.
 
 ## Organization
 
-- Define methods alphabetically.
+- Define methods alphabetically. (See Rails guide for more details about an exception in controllers.)
 - Define class methods before instance methods.
 - Always define the `initialize` method of a class at the top of instance method
   definitions.
