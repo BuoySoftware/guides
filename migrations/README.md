@@ -150,6 +150,14 @@ Depending on need, data migrations fall into two use cases as follows.
 - They are stored in `db/data`.
 - Use the generator `rails g data_migration some_new_data_migration`.
 - Make them reversible in case we have to rollback.
+- When possible, avoid using ruby classes directly for an immutable migration.
+- As with schema migrations, avoid database locks by disabling transactions
+  when necessary.
+- Prefer a rake task for long running data migrations.
+- If a long running interwoven data migration is required:
+   - Ensure that deploying engineers are aware of the expected runtime.
+   - Work with devops to ensure that the migration can be successfully completed
+     within the deployment window.
 
 #### Temporary Rake Task
 
