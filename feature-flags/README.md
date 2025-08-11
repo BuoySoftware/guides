@@ -38,5 +38,9 @@ of 3 categories:
   ensure feature adoption.
 - Be proactive in removing feature flags that are no longer needed.
 - Name feature flag environment variables with the `_ENABLED` suffix.
+- When deleting feature flags, ensure that all code references are removed prior to deletion.
+  - Feature flag records should not be removed using the data migration gem.
+  - Data migrations are run before traffic is routed to the new environment and any traffic received after the
+    migration, but before the deployment is complete will behave as if the feature flag is disabled.
 
 [feature branch]: https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow
