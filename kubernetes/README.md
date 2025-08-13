@@ -7,6 +7,7 @@
 - Don't define a [CPU resource limit]
 - Define a [memory resource request and limit]
 - Ensure the [memory resource limit matches the request]
+- Prefer to set CPU requests at a ratio of 1 CPU per 2 GB of RAM
 
 [CPU resource request]: examples/resources.yaml
 [CPU resource limit]: https://home.robusta.dev/blog/stop-using-cpu-limits
