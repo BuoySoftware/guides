@@ -16,6 +16,9 @@ of 3 categories:
 ## Guide
 
 - For release toggles, prefer database backed feature flags created an managed in Adminstrate -> Feature Flags
+    - Prefer making the feature flag facility or location based, unless there
+      is a specific reason it must be global. This allows for more granular
+      rollouts and rollbacks, so potential issues are contained.
 - For configuration toggles, prefer environment variable backed feature flags
 - Avoid creating feature flags with LaunchDarkly. This is considered deprecated
   unless used in React during our transition away from React. You should instead leverage
