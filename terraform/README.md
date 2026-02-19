@@ -50,16 +50,10 @@
 ## State Management
 
 - Use S3 for state storage with DynamoDB for locking.
-- Use `v2/terraform.tfstate` as the state key for the account root.
-- Use `v2/kubernetes/terraform.tfstate` for Kubernetes resources.
-- Use `v2/rds/terraform.tfstate` for RDS database objects.
-- Prefer the naming convention `buoy-<account>-us-east-1-terraform-state` for
-  state buckets and `buoy-<account>-us-east-1-terraform-locks` for lock tables.
 
 ## Provider Configuration
 
-- Use standardized provider versions across all accounts: `~> 5.79.0` for AWS,
-  `~> 0.18.1` for awsutils.
+- Use standardized provider versions across all accounts.
 - Apply `managed_by = "Terraform"` to all resources via `default_tags`.
 - Configure a disaster recovery provider alias (`use2`) for us-east-2 in each
   account.
