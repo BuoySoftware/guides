@@ -38,7 +38,6 @@ do not cover your particular topic, review their guides for guidance.
 - [Ruby](ruby/README.md)
 - [SQL-dbt](sql-dbt/README.md)
 - [Typescript](typescript/README.md)
-- [Terraform](terraform/README.md)
 
 ## Frameworks and platforms
 
@@ -68,16 +67,20 @@ do not cover your particular topic, review their guides for guidance.
 - [GraphQL](graphql/README.md)
 - [PostgreSQL](postgresql/README.md)
 
-## Other
+## Infrastructure
 
 - [AWS](aws/README.md)
 - [Kubernetes](kubernetes/README.md)
+- [Terraform](terraform/README.md)
+
+## Other
+
 - [Recommended Reading](reading.md)
 - [Responsibilities & Rituals](rituals/README.md)
 - [Tools](tools/README.md)
 - [Publishing Gems with GitHub Packages](ruby/gems.md)
 
-## *Rewriting with tools
+## \*Rewriting with tools
 
 An exception to the guideline "Don't rewrite existing code to follow this
 guide" is that when making a change that a tool such as Rubocop or TSC can
