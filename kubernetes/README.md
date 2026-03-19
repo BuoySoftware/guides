@@ -3,10 +3,14 @@
 ## Resource Limits
 
 - Define a [CPU resource request].
-- Don't define a [CPU resource limit].
 - Define a [memory resource request and limit].
 - Ensure the [memory resource limit matches the request].
-- Prefer to set CPU requests at a ratio of 1 CPU per 2 GB of RAM.
+
+### Workload Pods
+
+- Don't define a [CPU resource limit].
+- Prefer to set CPU requests at a ratio of 1 CPU per 2 GB of RAM unless there
+  is a good reason to deviate for a specific workload.
 
 ```yaml
 resources:
@@ -16,6 +20,22 @@ resources:
   limits:
     memory: "2Gi"
 ```
+
+Workload pods include:
+
+- Ruby on Rails applications
+- CI/CD runners
+- Airbyte jobs
+
+### Non-Workload Pods
+
+- Define a CPU resource limit so workload pods processing data can leverage the
+  leftover CPU, and to ensure non-workload pods won't impact other pods.
+- Set a minimum of 100m / 100Mi.
+- Set CPU and memory to what makes sense for the pod and monitor.
+
+Non-workload pods include background pods that perform monitoring or similar
+low-resource tasks.
 
 [CPU resource request]: examples/resources.yaml
 [CPU resource limit]: https://home.robusta.dev/blog/stop-using-cpu-limits
