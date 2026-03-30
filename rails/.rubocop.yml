@@ -20,6 +20,10 @@ Rails/ActionFilter:
   Description: "Enforces consistent use of action filter methods."
   Enabled: false
 
+Rails/ActionOrder:
+  Description: "Enforces the order of CRUD controller methods."
+  Enabled: true
+
 Rails/Date:
   Description: >-
     Checks the correct usage of date aware methods,
