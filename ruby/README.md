@@ -1,25 +1,5 @@
 # Ruby
 
-- Avoid conditional modifiers (lines that end with conditionals).
-- Avoid multiple assignments per line (`one, two = 1, 2`).
-- Avoid organizational comments (`# Validations`).
-- Avoid ternary operators (`boolean ? true : false`). Use multi-line `if`
-  instead to emphasize code branches.
-- Avoid bang (!) method names. Prefer descriptive names.
-- Name variables created by a factory after the factory (`user_factory` creates
-  `user`).
-- Prefer `&:method_name` to `{ |item| item.method_name }` for simple method
-  calls.
-- Use `_` for unused block parameters.
-- Prefix unused variables or parameters with underscore (`_`).
-- Suffix variables holding a factory with `_factory` (`user_factory`).
-- Use `%()` for single-line strings containing double-quotes that require
-  interpolation.
-- Prefer `def self.method`, over `class << self`.
-- Use `def` with parentheses when there are arguments.
-- Use heredocs for multi-line strings.
-- Order class methods above instance methods.
-- Prefer method invocation over instance variables.
 - Avoid optional parameters. Does the method do too much?
 - Avoid monkey-patching.
 - Generate necessary [Bundler binstubs] for the project, such as `rake` and
