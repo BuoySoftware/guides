@@ -4,6 +4,9 @@ A guide for building great Rails apps.
 
 - Use methods instead of instance variables in ViewComponent templates
 - Use i18n for all text within the application.
+- Raise on missing translations in development and test
+  (`config.i18n.raise_on_missing_translations = true`) so a missing key fails
+  loudly instead of shipping a fallback string.
 - Name date columns with `_on` suffixes.
 - Name datetime columns with `_at` suffixes.
 - Name time columns (referring to a time of day with no date) with `_time` suffixes.
