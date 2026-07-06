@@ -28,11 +28,27 @@ both humans and AI agents — the "why" isn't obvious from a lint failure alone.
 - Name predicate methods with a `?` suffix and no `is_` prefix (`even?`, not
   `is_even`). The `?` already signals a boolean answer, so the prefix is
   redundant. ([`Naming/PredicatePrefix`])
+- Prefer `&:method_name` over `{ |item| item.method_name }` for a block that
+  just calls one method. The symbol-to-proc form is shorter and reads as the
+  intent. ([`Style/SymbolProc`])
+- Avoid parallel assignment (`one, two = 1, 2`). Assigning on separate lines is
+  clearer and avoids surprises with mismatched left- and right-hand sides.
+  ([`Style/ParallelAssignment`])
+- Prefix unused block arguments and parameters with `_` (`_unused`), or use a
+  bare `_`. The underscore documents "intentionally ignored" so a genuinely
+  unused variable doesn't read like a mistake. ([`Lint/UnusedBlockArgument`])
+- Use `def` with parentheses when the method takes arguments. Parentheses make
+  the signature unambiguous and keep definitions consistent.
+  ([`Style/MethodDefParentheses`])
 
 [rubocop-buoy]: https://github.com/BuoySoftware/rubocop-buoy
 [`Style/ClassAndModuleChildren`]: https://docs.rubocop.org/rubocop/cops_style.html#styleclassandmodulechildren
 [`Style/CollectionMethods`]: https://docs.rubocop.org/rubocop/cops_style.html#stylecollectionmethods
 [`Naming/PredicatePrefix`]: https://docs.rubocop.org/rubocop/cops_naming.html#namingpredicateprefix
+[`Style/SymbolProc`]: https://docs.rubocop.org/rubocop/cops_style.html#stylesymbolproc
+[`Style/ParallelAssignment`]: https://docs.rubocop.org/rubocop/cops_style.html#styleparallelassignment
+[`Lint/UnusedBlockArgument`]: https://docs.rubocop.org/rubocop/cops_lint.html#lintunusedblockargument
+[`Style/MethodDefParentheses`]: https://docs.rubocop.org/rubocop/cops_style.html#stylemethoddefparentheses
 
 ## Bundler
 
