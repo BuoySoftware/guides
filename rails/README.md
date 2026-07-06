@@ -29,3 +29,22 @@ A guide for building great Rails apps.
 - Use dev:prime rake task for development environment seed data.
 - Prefer `cookies.signed` over `cookies` to prevent tampering.
 - Use `ENV.fetch` for environment variables instead of `ENV[]`so that unset environment variables are detected on deploy.
+
+## Style enforced by RuboCop
+
+These conventions are checked automatically by [rubocop-buoy]; you don't need
+to police them by hand. They're documented here so the intent is explicit for
+both humans and AI agents — the "why" isn't obvious from a lint failure alone.
+
+- Prefer `Time.current` over `Time.now` and `Time.zone.parse("2014-07-04 16:05:37")`
+  over `Time.parse("2014-07-04 16:05:37")`. The zone-aware methods respect the
+  application's configured time zone; the bare `Time` methods use the server's
+  system zone, which silently produces wrong results across environments.
+  ([`Rails/TimeZone`], `EnforcedStyle: flexible`)
+- Prefer `Date.current` over `Date.today`. `Date.today` reads the server's
+  system date rather than the application time zone, so it can be off by a day.
+  ([`Rails/Date`])
+
+[rubocop-buoy]: https://github.com/BuoySoftware/rubocop-buoy
+[`Rails/TimeZone`]: https://docs.rubocop.org/rubocop-rails/cops_rails.html#railstimezone
+[`Rails/Date`]: https://docs.rubocop.org/rubocop-rails/cops_rails.html#railsdate

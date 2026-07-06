@@ -11,6 +11,29 @@
 
 [bundler binstubs]: https://github.com/sstephenson/rbenv/wiki/Understanding-binstubs
 
+## Style enforced by RuboCop
+
+These conventions are checked automatically by [rubocop-buoy]; you don't need
+to police them by hand. They're documented here so the intent is explicit for
+both humans and AI agents — the "why" isn't obvious from a lint failure alone.
+
+- Prefer nested class and module definitions over the compact `Foo::Bar`
+  shorthand. Nesting keeps `Module.nesting` and constant lookup predictable, so
+  references resolve against the enclosing namespace as written.
+  ([`Style/ClassAndModuleChildren`], `EnforcedStyle: nested`)
+- Prefer the shorter, more idiomatic `Enumerable` names over their aliases —
+  `detect` over `find`, `select` over `find_all`, `map` over `collect`, and
+  `reduce` over `inject`. Picking one name per operation keeps the codebase
+  consistent and greppable. ([`Style/CollectionMethods`])
+- Name predicate methods with a `?` suffix and no `is_` prefix (`even?`, not
+  `is_even`). The `?` already signals a boolean answer, so the prefix is
+  redundant. ([`Naming/PredicatePrefix`])
+
+[rubocop-buoy]: https://github.com/BuoySoftware/rubocop-buoy
+[`Style/ClassAndModuleChildren`]: https://docs.rubocop.org/rubocop/cops_style.html#styleclassandmodulechildren
+[`Style/CollectionMethods`]: https://docs.rubocop.org/rubocop/cops_style.html#stylecollectionmethods
+[`Naming/PredicatePrefix`]: https://docs.rubocop.org/rubocop/cops_naming.html#namingpredicateprefix
+
 ## Bundler
 
 - Specify the [Ruby version] to be used on the project in the `Gemfile`.
