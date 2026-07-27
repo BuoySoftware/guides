@@ -98,10 +98,19 @@ going one release at a time instead of all the way to the final release.
 - Since there are no data, there should be no references to models.
 - If there are default values, set them in migrations.
 - [Add foreign key constraints] in migrations.
-- Set an explicit `on_delete` behavior for each foreign key (`:cascade`,
-  `:nullify`, or `:restrict`). Leaving it implicit hides what happens to child
-  rows when a parent is deleted, which is a data-integrity decision worth making
-  on purpose.
+- Leave `on_delete` off the foreign key. The default is `NO ACTION`, so the
+  database rejects a delete that would orphan child rows, and we express the
+  intended behavior at the model level with `dependent:` instead.
+- Avoid `on_delete: :cascade` and `on_delete: :nullify`. Both delete or mutate
+  rows the application never sees, which skips callbacks, `PaperTrail`
+  versions, and audit logging, and emits change events our downstream consumers
+  cannot attribute to anything.
+- Declare the delete behavior on the association instead. Use
+  `dependent: :restrict_with_exception` when child rows should block the
+  delete, and `dependent: :destroy` when they should go with the parent.
+- If a table genuinely needs the database to enforce the cascade — because rows
+  are removed by SQL that bypasses `ActiveRecord`, such as a data migration —
+  set `on_delete` deliberately and note why in the migration.
 - Add appropriate indexes.
 - When possible, avoid using ruby classes directly for an immutable migration.
 
