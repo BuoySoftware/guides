@@ -16,6 +16,12 @@ that covers this material from [Derek Prior at RailsConf
 - Avoid selective ownership of code. ("mine", "not mine", "yours")
 - Avoid using terms that could be seen as referring to personal traits. ("dumb",
   "stupid"). Assume everyone is intelligent and well-meaning.
+- Avoid diminishing words like "just", "simply", or "obviously". They imply the
+  thing the author missed was trivial, even when it wasn't.
+- When you disagree, explain your reasoning and suggest an alternative rather
+  than only rejecting. A bare "no" stalls the PR.
+- If you learned something from the change, say so. Review is a two-way exchange,
+  not one-directional critique.
 - Be explicit. Remember people don't always understand your intentions online.
 - Be humble. ("I'm not sure - let's look it up.")
 - Don't use hyperbole. ("always", "never", "endlessly", "nothing")
@@ -34,6 +40,9 @@ that covers this material from [Derek Prior at RailsConf
 - Explain why the code exists. ("It's like that because of these reasons. Would
   it be more clear if I rename this class/file/method/variable?")
 - Extract some changes and refactoring into future tickets/stories.
+- Include before/after screenshots or a short screencast for changes with a
+  visual result. It lets the reviewer see the outcome without checking out the
+  branch.
 - Link to the code review from the ticket/story. ("Ready for review:
   https://github.com/organization/project/pull/1")
 - Push commits based on earlier rounds of feedback as isolated commits to the
@@ -62,6 +71,13 @@ experience, refactors the existing code). Then:
   author make the final decision on alternative implementations.
 - Offer alternative implementations, but assume the author already considered
   them. ("What do you think about using a custom validator here?")
+- Avoid the "since you're at it" attitude. If you spot unrelated work, open a
+  ticket instead of expanding the scope of the PR under review.
+- Consolidate repeated style nits into a single comment, or point at the linter,
+  rather than leaving the same comment on every occurrence.
+- When using GitHub's "Add a suggestion" feature, test the suggestion first. If
+  you couldn't, say so. Be especially cautious suggesting code you got from an
+  LLM or a blog post without verifying it against this codebase.
 - Seek to understand the author's perspective.
 - Sign off on the pull request with a 👍 or "Ready to merge" comment.
 - Remember that you are here to provide feedback, not to be a gatekeeper.
