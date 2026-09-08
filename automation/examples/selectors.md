@@ -2,9 +2,9 @@
 
 When finding elements on a page, it's best to have a unique and stable selector. `data-testid` is the ideal selector to use, as it is resilient to DOM changes and gives the user the exact element they intend to interact with.
 
-There are times when `data-testid` may not be needed. An element can also be found by `role` or by `label`. Due to our extensive use of i18n translations within our test automation code, we can utilize these translations when finding elements by `role` or `label`.
+There are times when `data-testid` may not be needed. An element can also be found by `role` or by `label`, using the text the user sees.
 
-Whether we use `data-testid`, `role` or `label`. We should try to associate the locator with the i18n translation.
+Whether we use `data-testid`, `role` or `label`, pair the locator with the visible copy as a literal string. The test then fails when the copy is wrong, which a lookup into the app's own locale file never can.
 
 ## data-testid example
 
@@ -35,8 +35,9 @@ In this example, the element is identified by its associated label. The `aria-la
 
 - Use `data-testid` for elements that are stable and need to be uniquely identified in tests.
 - Leverage `role` or `label` attributes when `data-testid` isn't necessary, especially for accessibility purposes.
-- Consider using translations in i18n-enabled applications when identifying elements by `data-testid`, `role` or `label`.
+- Write the visible copy as a literal, such as `getByRole("button", { name: "Submit" })` or `getByTestId("submit-button").filter({ hasText: "Submit" })`.
 
 ## Don't
 
 - Rely on unstable or overly generic selectors like class names or element types in tests, as these can break easily with UI changes.
+- Read expected copy through an i18n lookup. It cannot catch wrong copy, and a moved key resolves to an empty string and a timeout.
