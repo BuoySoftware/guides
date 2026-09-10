@@ -50,7 +50,7 @@ Test steps should be defined within the method.
 
         await expect(phlebotomySection.sectionElm).toBeVisible();
         expect(await phlebotomySection.cellData("visit_type")).toEqual(
-          this.sampleRecordPage.t_visit_type("SAMPLE_ONLY"),
+          "Sample Only",
         );
         expect(await phlebotomySection.cellData("unit_control_number")).toEqual(
           fixture.ucn,
@@ -64,17 +64,20 @@ When the test flow is called inside of a spec, there is no need to add additiona
 
 ### Example:
 ```ts
-  test(
-    "screener completes donor registration",
-    { tag: ["@TCID-XXXX"] },
-    async ({ context, page }) => {
-      const registrationBuilder = new RegistrationBuilder(context, page, {
-        headless: IS_HEADLESS,
-      });
+  test("screener completes donor registration", async ({ context, page, TB }) => {
+    TB.addManualQaseLink("MT-1234");
 
-      await registrationBuilder.navigationBuilder.login();
-    },
-  );
+    const registrationBuilder = new RegistrationBuilder(context, page, {
+      headless: IS_HEADLESS,
+    });
+
+    await registrationBuilder.navigationBuilder.login();
+  });
+```
+
+Don't hand-add a test-management id as a tag. The reporter fills the id in after the run; the spec declares only the manual case it mirrors.
+
+```ts
 ```
 
 
