@@ -6,7 +6,7 @@ As engineers, we have myriad responsibilities. As professionals we are expected 
 	* Adding or clarifying acceptance criteria on stories
 * Github
 	* Code review
-	* Dependency updates
+	* [Dependency updates](/dependency-upgrades/)
 	* Maintaining a clean set of branches (deleting branches when you are done)
 * Maintenance
 	* Sentry
