@@ -42,7 +42,9 @@ do not cover your particular topic, review their guides for guidance.
 ## Frameworks and platforms
 
 - [Rails](rails/README.md)
+- [React](react/README.md)
 - [Testing with RSpec](testing-rspec/README.md)
+- [Testing with Jest](testing-jest/README.md)
 
 ## Protocols
 
